@@ -1,0 +1,10 @@
+<additional>
+    <tlLogic id="cluster_14141137404_14141137405_14141137406_31228768_#3more" type="static" programID="per_approach" offset="0">
+        <phase duration="30" state="GGGGrrrrrrrrr"/>
+        <phase duration="4" state="yyyyrrrrrrrrr"/>
+        <phase duration="30" state="rrrrrrrrrrrGG"/>
+        <phase duration="4" state="rrrrrrrrrrryy"/>
+        <phase duration="30" state="rrrrGGGGGGGrr"/>
+        <phase duration="4" state="rrrryyyyyyyrr"/>
+    </tlLogic>
+</additional>

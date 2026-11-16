@@ -1,0 +1,13 @@
+# Koteshwor junction, Kathmandu, Nepal. Used by scripts/import_osm.py.
+# Every tool's argument order (e.g. OSM API / netconvert "min_lon,min_lat,max_lon,max_lat")
+# is built from these named fields, so the order is never typed by hand.
+bbox:
+  south: 27.677   # min latitude
+  west: 85.347    # min longitude
+  north: 27.681   # max latitude
+  east: 85.351    # max longitude
+
+# Approximate centre of the junction; the imported traffic light must be within ~50 m.
+junction:
+  lat: 27.6786
+  lon: 85.3494

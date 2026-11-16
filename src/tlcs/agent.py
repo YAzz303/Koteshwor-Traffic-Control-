@@ -3,7 +3,6 @@ from pathlib import Path
 
 import numpy as np
 
-from tlcs.constants import NUM_ACTIONS, STATE_SIZE
 from tlcs.memory import Memory
 from tlcs.model import Model
 from tlcs.settings import TrainingSettings
@@ -15,6 +14,8 @@ class Agent:
     def __init__(
         self,
         settings: TrainingSettings,
+        input_dim: int,
+        output_dim: int,
         epsilon: float = 1.0,
         model_path: Path | None = None,
     ) -> None:
@@ -22,6 +23,8 @@ class Agent:
 
         Args:
             settings: Training settings containing model hyperparameters.
+            input_dim: Observation length (from the environment).
+            output_dim: Number of actions (from the environment).
             epsilon: Exploration probability in [0, 1].
             model_path: Optional path to load a pre-trained model.
         """
@@ -30,8 +33,8 @@ class Agent:
             num_layers=settings.num_layers,
             width=settings.width_layers,
             learning_rate=settings.learning_rate,
-            input_dim=STATE_SIZE,
-            output_dim=NUM_ACTIONS,
+            input_dim=input_dim,
+            output_dim=output_dim,
             model_path=model_path,
         )
 

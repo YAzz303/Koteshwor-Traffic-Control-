@@ -31,8 +31,16 @@ class TrainingSettings(BaseModel):
     # agent
     gamma: Annotated[float, Field(ge=0, le=1)]
 
-    # paths
-    sumocfg_file: Path
+    # network
+    # Folder under intersection/ holding the SUMO network (one *.net.xml + sumo_config.sumocfg).
+    network: str = "original"
+    # Traffic light to control; null = the only traffic light in the network.
+    tls_id: str | None = None
+    # tlLogic file in the network folder whose green phases are the actions; null = the
+    # program in the net file.
+    signal_program: str | None = None
+    # state: cells per incoming lane (state size = incoming lanes x cells_per_lane)
+    cells_per_lane: PositiveInt = 5
 
     @model_validator(mode="after")
     def check_memory_bounds(self) -> Self:
@@ -61,8 +69,32 @@ class TestingSettings(BaseModel):
     # agent
     gamma: Annotated[float, Field(ge=0, le=1)]
 
-    # paths
-    sumocfg_file: Path
+    # network
+    # Folder under intersection/ holding the SUMO network (one *.net.xml + sumo_config.sumocfg).
+    network: str = "original"
+    # Traffic light to control; null = the only traffic light in the network.
+    tls_id: str | None = None
+    # tlLogic file in the network folder whose green phases are the actions; null = the
+    # program in the net file.
+    signal_program: str | None = None
+
+    # baselines (optional; only used by `tlcs baseline`)
+    # Green time (s) per action (one value per green phase, in signal-program order) for the
+    # fixed-time controller. None means every phase gets `green_duration`.
+    fixed_green_durations: list[PositiveInt] | None = None
+    # Maximum green (s) per phase for SUMO's actuated controller; minimum is `green_duration`.
+    actuated_max_green: PositiveInt = 60
+
+    @model_validator(mode="after")
+    def check_baseline_settings(self) -> Self:
+        """Validate the optional baseline-controller settings."""
+        if self.actuated_max_green < self.green_duration:
+            msg = (
+                f"actuated_max_green ({self.actuated_max_green}) must be >= "
+                f"green_duration ({self.green_duration})"
+            )
+            raise ValueError(msg)
+        return self
 
 
 def load_yaml(path: Path) -> dict[str, Any]:

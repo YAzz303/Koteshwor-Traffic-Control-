@@ -85,6 +85,7 @@ class Model:
             model_file = model_path / MODEL_FILE
             logger.info(f"Loading trained model for the Agent from {model_file}")
             self.model = self.load_model(model_file)
+            self._check_dims(model_file)
         else:
             logger.info("Creating new model for the Agent")
             self.model = MLP(
@@ -96,6 +97,18 @@ class Model:
 
         self.loss_fn = nn.MSELoss()
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.learning_rate)
+
+    def _check_dims(self, model_file: Path) -> None:
+        """Ensure a loaded network matches the environment's observation and action sizes."""
+        linears = [m for m in self.model.modules() if isinstance(m, nn.Linear)]
+        loaded = (linears[0].in_features, linears[-1].out_features)
+        if loaded != (self.input_dim, self.output_dim):
+            msg = (
+                f"Model '{model_file}' expects {loaded[0]} inputs and {loaded[1]} actions, but the "
+                f"environment has {self.input_dim} inputs and {self.output_dim} actions. "
+                "Check that `network` and `cells_per_lane` match the ones used for training."
+            )
+            raise ValueError(msg)
 
     def _predict(self, states: NDArray) -> NDArray:
         """Internal helper to run prediction on a batch of states.

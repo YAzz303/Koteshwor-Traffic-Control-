@@ -13,6 +13,7 @@ dependencies = [
     "numpy>=2.3.4",
     "pdbpp>=0.11.7",
     "pydantic>=2.12.4",
+    "pyproj>=3.8.0",
     "pyyaml>=6.0.3",
     "rich>=14.2.0",
     "ruff>=0.14.3",
@@ -58,6 +59,14 @@ known-first-party = ["finance"]
 [tool.uv]
 python-preference = "only-managed"
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
 [tool.mypy]
 python_version = "3.13"
 disable_error_code = ["import-untyped"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

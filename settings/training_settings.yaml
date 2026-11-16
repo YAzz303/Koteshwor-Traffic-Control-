@@ -21,5 +21,10 @@ memory_size_max: 50000
 # agent
 gamma: 0.75
 
-# paths
-sumocfg_file: intersection/sumo_config.sumocfg
+# network
+network: original   # folder under intersection/
+tls_id: null        # null = the only traffic light in the network
+signal_program: null  # tlLogic file in the network folder; null = net file's program
+
+# state
+cells_per_lane: 5   # state size = incoming lanes x cells_per_lane (original: 16 x 5 = 80)

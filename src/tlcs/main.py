@@ -1,16 +1,29 @@
+import json
 from datetime import datetime
 from pathlib import Path
 from shutil import copyfile
 from typing import TypedDict
 
 from tlcs.agent import Agent
-from tlcs.constants import TESTING_SETTINGS_FILE, TRAINING_SETTINGS_FILE
+from tlcs.constants import (
+    REWARD_STEPS_FILE,
+    RUN_INFO_FILE,
+    TESTING_SETTINGS_FILE,
+    TRAINING_SETTINGS_FILE,
+    TRIPINFO_FILE,
+)
 from tlcs.env import Environment, EnvStats
 from tlcs.episode import Record, run_episode
 from tlcs.logger import get_logger
 from tlcs.memory import Memory, Sample
+from tlcs.network import load_network_spec
 from tlcs.plots import save_data_and_plot
-from tlcs.settings import load_testing_settings, load_training_settings
+from tlcs.settings import (
+    TestingSettings,
+    TrainingSettings,
+    load_testing_settings,
+    load_training_settings,
+)
 
 logger = get_logger(__name__)
 
@@ -91,9 +104,29 @@ def training_session(settings_file: Path, out_path: Path) -> None:
         out_path: Directory where model, settings and plots will be saved.
     """
     settings = load_training_settings(settings_file)
+    spec = load_network_spec(settings.network, settings.tls_id, settings.signal_program)
+
+    def make_env() -> Environment:
+        return Environment(
+            spec=spec,
+            n_cars_generated=settings.n_cars_generated,
+            max_steps=settings.max_steps,
+            yellow_duration=settings.yellow_duration,
+            green_duration=settings.green_duration,
+            turn_chance=settings.turn_chance,
+            gui=settings.gui,
+            cells_per_lane=settings.cells_per_lane,
+        )
+
+    probe = make_env()
+    logger.info(
+        f"Network '{settings.network}': traffic light '{spec.tls_id}', "
+        f"{len(spec.incoming_lanes)} incoming lanes, state size {probe.state_size}, "
+        f"{probe.num_actions} actions"
+    )
 
     memory = Memory(size_max=settings.memory_size_max, size_min=settings.memory_size_min)
-    agent = Agent(settings=settings)
+    agent = Agent(settings=settings, input_dim=probe.state_size, output_dim=probe.num_actions)
 
     timestamp_start = datetime.now()
     tot_episodes = settings.total_episodes
@@ -110,17 +143,7 @@ def training_session(settings_file: Path, out_path: Path) -> None:
         new_epsilon = round(1.0 - (episode / tot_episodes), 2)
         agent.set_epsilon(new_epsilon)
 
-        env = Environment(
-            n_cars_generated=settings.n_cars_generated,
-            max_steps=settings.max_steps,
-            yellow_duration=settings.yellow_duration,
-            green_duration=settings.green_duration,
-            turn_chance=settings.turn_chance,
-            gui=settings.gui,
-            sumocfg_file=settings.sumocfg_file,
-        )
-
-        episode_history, env_stats = run_episode(env=env, agent=agent, seed=episode)
+        episode_history, env_stats = run_episode(env=make_env(), agent=agent, seed=episode)
 
         add_experience_to_memory(memory=memory, history=episode_history)
 
@@ -179,6 +202,28 @@ def training_session(settings_file: Path, out_path: Path) -> None:
     )
 
 
+def load_model_settings(model_path: Path, settings: TestingSettings) -> TrainingSettings:
+    """Load the training settings saved with a model and check they fit the test scenario.
+
+    Args:
+        model_path: Folder with the trained model and its training_settings.yaml.
+        settings: Testing settings of the run.
+
+    Returns:
+        The model's training settings (its state layout comes from `cells_per_lane`).
+    """
+    trained = load_training_settings(model_path / TRAINING_SETTINGS_FILE)
+    model_net = (trained.network, trained.tls_id, trained.signal_program)
+    test_net = (settings.network, settings.tls_id, settings.signal_program)
+    if model_net != test_net:
+        msg = (
+            f"Model in '{model_path}' was trained on network/tls_id/signal_program {model_net} "
+            f"but the test uses {test_net}"
+        )
+        raise ValueError(msg)
+    return trained
+
+
 def testing_session(settings_file: Path, model_path: Path, test_name: str) -> None:
     """Load a trained agent and run a single testing episode, saving plots and settings.
 
@@ -192,20 +237,24 @@ def testing_session(settings_file: Path, model_path: Path, test_name: str) -> No
     test_path = model_path / test_name
     test_path.mkdir(parents=True, exist_ok=True)
 
-    agent = Agent(
-        settings=load_training_settings(model_path / TRAINING_SETTINGS_FILE),
-        epsilon=0,
-        model_path=model_path,
-    )
-
+    trained = load_model_settings(model_path, settings)
     env = Environment(
+        spec=load_network_spec(settings.network, settings.tls_id, settings.signal_program),
         n_cars_generated=settings.n_cars_generated,
         max_steps=settings.max_steps,
         yellow_duration=settings.yellow_duration,
         green_duration=settings.green_duration,
         turn_chance=settings.turn_chance,
         gui=settings.gui,
-        sumocfg_file=settings.sumocfg_file,
+        cells_per_lane=trained.cells_per_lane,
+        tripinfo_file=test_path / TRIPINFO_FILE,
+    )
+    agent = Agent(
+        settings=trained,
+        input_dim=env.state_size,
+        output_dim=env.num_actions,
+        epsilon=0,
+        model_path=model_path,
     )
 
     episode_history, env_stats = run_episode(
@@ -214,26 +263,72 @@ def testing_session(settings_file: Path, model_path: Path, test_name: str) -> No
         seed=settings.episode_seed,
     )
 
+    save_test_results(
+        out_path=test_path,
+        settings_file=settings_file,
+        settings=settings,
+        controller="dqn",
+        episode_history=episode_history,
+        env_stats=env_stats,
+    )
+
+
+def save_test_results(  # noqa: PLR0913
+    out_path: Path,
+    settings_file: Path,
+    settings: TestingSettings,
+    controller: str,
+    episode_history: list[Record],
+    env_stats: list[EnvStats],
+) -> None:
+    """Save the plots and data of a single test episode (DQN or baseline).
+
+    Writes the settings copy, reward and queue plots + data, the simulation step of each reward
+    and a small run_info.json used by `tlcs compare`.
+
+    Args:
+        out_path: Folder where results are saved.
+        settings_file: Testing settings file used for the run (copied into out_path).
+        settings: The validated testing settings.
+        controller: Name of the controller that ran the episode (e.g. "dqn", "fixed").
+        episode_history: Records produced during the episode.
+        env_stats: Per-step environment statistics for the episode.
+    """
+    out_path.mkdir(parents=True, exist_ok=True)
+
     testing_stats: TestingStats = {
         "reward": [record.reward for record in episode_history],
         "queue_length": [stats.queue_length for stats in env_stats],
     }
 
-    copyfile(src=settings_file, dst=test_path / TESTING_SETTINGS_FILE)
+    copyfile(src=settings_file, dst=out_path / TESTING_SETTINGS_FILE)
 
     save_data_and_plot(
         data=testing_stats["reward"],
         filename="reward",
         xlabel="Action step",
         ylabel="Reward",
-        out_folder=test_path,
+        out_folder=out_path,
     )
     save_data_and_plot(
         data=testing_stats["queue_length"],
         filename="queue",
         xlabel="Step",
         ylabel="Queue length (vehicles)",
-        out_folder=test_path,
+        out_folder=out_path,
     )
 
-    logger.info(f"Testing results saved at: {test_path}")
+    steps_text = "\n".join(str(record.step) for record in episode_history) + "\n"
+    (out_path / REWARD_STEPS_FILE).write_text(steps_text, encoding="utf-8")
+
+    run_info = {
+        "controller": controller,
+        "episode_seed": settings.episode_seed,
+        "max_steps": settings.max_steps,
+        "n_cars_generated": settings.n_cars_generated,
+        "green_duration": settings.green_duration,
+        "yellow_duration": settings.yellow_duration,
+    }
+    (out_path / RUN_INFO_FILE).write_text(json.dumps(run_info, indent=2), encoding="utf-8")
+
+    logger.info(f"Testing results saved at: {out_path}")
