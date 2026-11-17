@@ -1,5 +1,3 @@
 .vscode/settings.json
 *.pyc
 changes.txt
-debug/
-instructions.md
