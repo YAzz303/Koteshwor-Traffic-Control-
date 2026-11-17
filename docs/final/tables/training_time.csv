@@ -1,0 +1,3 @@
+run,episodes,training_time_min,seconds_per_episode,start,end
+DQN 100 episodes,100,16.6,9.9,2026-11-16 22:05:34,2026-11-16 22:22:08
+DQN 1000 episodes,1000,138.9,8.3,2026-11-17 10:38:45,2026-11-17 12:57:37

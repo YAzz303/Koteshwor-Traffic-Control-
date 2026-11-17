@@ -14,6 +14,9 @@ MODEL_FILE = Path("trained_model.pt")
 
 DEFAULT_TEST_FOLDER = "test"
 
+# Subfolder of a training run with one model folder per checkpoint (episode_0100, ...).
+CHECKPOINTS_FOLDER = Path("checkpoints")
+
 # ---------------------------------------------------------------------------
 # SUMO route file configuration
 # ---------------------------------------------------------------------------

@@ -216,6 +216,15 @@ def cmd_compare(
         int,
         typer.Option(min=1, help="Moving-average window (steps) for the queue plot; 1 = raw."),
     ] = 60,
+    labels: Annotated[
+        str | None,
+        typer.Option(
+            help=(
+                "Comma-separated label per run, in --runs order (default: folder names). "
+                "With runs at several demands, give one controller the same label at each."
+            ),
+        ),
+    ] = None,
 ) -> None:
     """CLI command to compare several test runs.
 
@@ -224,6 +233,7 @@ def cmd_compare(
         runs: Test run folders.
         out_path: Output directory for comparison artifacts.
         smooth: Moving-average window for the queue plot.
+        labels: Comma-separated display labels, one per run.
     """
     run_paths = list(runs)
     for extra in ctx.args:
@@ -233,7 +243,12 @@ def cmd_compare(
             raise typer.Abort
         run_paths.append(path)
 
-    compare_session(run_paths=run_paths, out_path=out_path, smooth=smooth)
+    label_list = [label.strip() for label in labels.split(",")] if labels else None
+    try:
+        compare_session(run_paths=run_paths, out_path=out_path, smooth=smooth, labels=label_list)
+    except ValueError as e:
+        typer.echo(str(e))
+        raise typer.Abort from e
 
 
 @app.command(

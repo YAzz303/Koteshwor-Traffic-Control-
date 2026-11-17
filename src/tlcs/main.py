@@ -6,6 +6,7 @@ from typing import TypedDict
 
 from tlcs.agent import Agent
 from tlcs.constants import (
+    CHECKPOINTS_FOLDER,
     REWARD_STEPS_FILE,
     RUN_INFO_FILE,
     TESTING_SETTINGS_FILE,
@@ -96,6 +97,35 @@ def update_training_stats(
     return training_stats
 
 
+def is_checkpoint_episode(episode_number: int, checkpoint_every: int) -> bool:
+    """True if a checkpoint is due after this (1-based) episode; checkpoint_every 0 = never."""
+    return checkpoint_every > 0 and episode_number % checkpoint_every == 0
+
+
+def checkpoint_dir(out_path: Path, episode_number: int) -> Path:
+    """Folder of the checkpoint taken after `episode_number` episodes."""
+    return out_path / CHECKPOINTS_FOLDER / f"episode_{episode_number:04d}"
+
+
+def save_checkpoint(agent: Agent, settings_file: Path, out_path: Path, episode_number: int) -> Path:
+    """Save the current model plus the training settings, so `tlcs test` can load the folder.
+
+    Args:
+        agent: Agent whose model is saved.
+        settings_file: Training settings file of the run (copied next to the model).
+        out_path: Output folder of the training run.
+        episode_number: Number of episodes trained so far (1-based).
+
+    Returns:
+        The checkpoint folder.
+    """
+    path = checkpoint_dir(out_path, episode_number)
+    path.mkdir(parents=True, exist_ok=True)
+    agent.save_model(path)
+    copyfile(src=settings_file, dst=path / TRAINING_SETTINGS_FILE)
+    return path
+
+
 def training_session(settings_file: Path, out_path: Path) -> None:
     """Run a full training session and save the trained model and statistics.
 
@@ -169,6 +199,10 @@ def training_session(settings_file: Path, out_path: Path) -> None:
         logger.info(f"\tReward: {last_neg_reward}")
         logger.info(f"\tCumulative wait: {last_cumulative_wait}")
         logger.info(f"\tAvg queue: {last_avg_queue_length}")
+
+        if is_checkpoint_episode(episode + 1, settings.checkpoint_every):
+            checkpoint_path = save_checkpoint(agent, settings_file, out_path, episode + 1)
+            logger.info(f"\tCheckpoint saved at: {checkpoint_path}")
 
     out_path.mkdir(parents=True, exist_ok=True)
     agent.save_model(out_path)

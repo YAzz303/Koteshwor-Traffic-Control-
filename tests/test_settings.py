@@ -58,3 +58,19 @@ def test_old_settings_with_sumocfg_file_still_load() -> None:
 def test_actuated_max_green_must_cover_min_green() -> None:
     with pytest.raises(ValidationError):
         Settings.model_validate({**BASE_TESTING, "actuated_max_green": 5})
+
+
+def test_koteshwor_demand_presets_differ_only_in_demand() -> None:
+    base = load_testing_settings(SETTINGS_DIR / "koteshwor_testing.yaml").model_dump()
+    demands = {}
+    for name in ("low", "medium", "high"):
+        preset = load_testing_settings(SETTINGS_DIR / f"koteshwor_testing_{name}.yaml").model_dump()
+        demands[name] = preset.pop("n_cars_generated")
+        assert not preset.pop("gui")
+        assert preset == {k: v for k, v in base.items() if k not in {"gui", "n_cars_generated"}}
+    assert demands["low"] < demands["medium"] == base["n_cars_generated"] < demands["high"]
+
+
+def test_checkpoint_every_defaults_to_100() -> None:
+    training = load_training_settings(SETTINGS_DIR / "koteshwor_training.yaml")
+    assert training.checkpoint_every == 100

@@ -42,6 +42,9 @@ class TrainingSettings(BaseModel):
     # state: cells per incoming lane (state size = incoming lanes x cells_per_lane)
     cells_per_lane: PositiveInt = 5
 
+    # checkpoints: save the model every N episodes into <out>/checkpoints/; 0 = off
+    checkpoint_every: NonNegativeInt = 100
+
     @model_validator(mode="after")
     def check_memory_bounds(self) -> Self:
         """Ensure that memory_size_min is strictly smaller than memory_size_max."""

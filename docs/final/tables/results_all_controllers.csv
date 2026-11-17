@@ -1,0 +1,13 @@
+run,controller,demand,avg_wait_per_vehicle_s,avg_entry_delay_s,mean_queue_length,max_queue_length,throughput,cumulative_negative_reward,vehicles
+DQN 100 ep,dqn,600,10.07,0.05,1.11,10.0,599,-2340.0,599
+DQN 1000 ep (best),dqn,600,9.19,0.05,1.01,11.0,599,-2145.0,599
+fixed-time,fixed,600,11.82,0.05,1.31,11.0,599,-2492.0,599
+max-pressure,maxpressure,600,14.49,0.05,1.6,11.0,599,-4499.0,599
+DQN 100 ep,dqn,1000,25.13,0.11,4.55,50.0,999,-7548.0,999
+DQN 1000 ep (best),dqn,1000,21.28,0.11,3.75,26.0,999,-5348.0,999
+fixed-time,fixed,1000,111.23,32.2,16.93,65.0,999,-43061.0,999
+max-pressure,maxpressure,1000,53.55,2.96,6.03,31.0,999,-19859.0,999
+DQN 100 ep,dqn,1400,67.66,53.56,12.12,65.0,1399,-24103.0,1399
+DQN 1000 ep (best),dqn,1400,55.79,87.1,7.89,55.0,1399,-23089.0,1399
+fixed-time,fixed,1400,159.79,413.35,31.35,65.0,1399,-87490.0,1399
+max-pressure,maxpressure,1400,77.07,212.12,9.7,35.0,1399,-47719.0,1399

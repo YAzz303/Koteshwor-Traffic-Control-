@@ -99,6 +99,20 @@ tlcs train --out-path model/run-01 > train.log 2>&1                   # also sav
 
 To watch training in the SUMO GUI, set `gui: true` in the training settings (this is much slower). For a quick smoke test, lower `total_episodes` (for example to 5).
 
+Every `checkpoint_every` episodes (default 100), training saves the model so far to `<out-path>/checkpoints/episode_0100/`, `episode_0200/`, and so on. Each checkpoint folder has its own `trained_model.pt` and `training_settings.yaml`, so it can be tested like any model:
+
+```bash
+tlcs test --settings-file settings/koteshwor_testing_medium.yaml --model-path model/koteshwor-dqn-1000/checkpoints/episode_0500 --test-name test-medium
+
+# Test every checkpoint and plot test results against training episodes (picks the best by waiting time)
+uv run python scripts/eval_checkpoints.py --run model/koteshwor-dqn-1000 --settings-file settings/koteshwor_testing_medium.yaml --test-name test-medium --reference "fixed=baselines/koteshwor/fixed"
+
+# Learning curves of several runs side by side
+uv run python scripts/plot_learning_curves.py --runs model/koteshwor model/koteshwor-dqn-1000 --labels "100 episodes" "1000 episodes" --out docs/figures/learning_curves.png --clip
+```
+
+`eval_checkpoints.py` writes `<run>/checkpoints/<test-name>_eval.csv` and `_eval.png`. It reuses checkpoint tests that already exist unless you pass `--rerun`. With `--clip`, `plot_learning_curves.py` limits each row's y-axis to the 1st–99th percentile, so a few extreme episodes (such as a jammed one) don't flatten the curves. Off-scale episodes are marked and listed on the plot.
+
 ### Testing a trained model
 
 ```bash
@@ -136,9 +150,14 @@ tlcs baseline --controller actuated    --test-name actuated
 # Compare any test runs (DQN and baselines): plots + summary.csv in comparison/
 tlcs compare --runs model/run-01/test baselines/fixed baselines/random baselines/lqf baselines/maxpressure baselines/actuated
 tlcs compare --runs model/run-01/test baselines/lqf --out-path comparison/dqn-vs-lqf --smooth 1
+
+# Runs at several demand levels: one grouped bar chart per metric; --labels names each run
+tlcs compare --runs model/koteshwor/test-low baselines/koteshwor-low/fixed model/koteshwor/test baselines/koteshwor/fixed --labels dqn,fixed,dqn,fixed --out-path comparison/by-demand
 ```
 
 For a fair comparison, run `tlcs test` and `tlcs baseline` with the **same** testing settings file. See [Baselines](#baselines) for what each controller does.
+
+`--labels` takes one comma-separated label per run, in `--runs` order (default: folder names). The demand of each run (`n_cars_generated`) is read from its `run_info.json`. If the runs have more than one demand, `tlcs compare` switches to grouped mode: one group of bars per demand, one bar per label. Give one controller the same label at every demand. Up to 8 runs, or 8 labels in grouped mode, fit in one comparison.
 
 `tlcs compare` only reads runs that finished. If a SUMO-GUI window is closed or the run is interrupted before the last step, no plots or data are written for it.
 
@@ -162,7 +181,7 @@ Options: `--controllers` (comma-separated, default all six), `--delay` (ms per s
 uv run pytest
 ```
 
-The tests cover the OSM import helpers (bounding box order, bounds check, clipping, turn restrictions, arms, phase plan) and the committed Koteshwor network, network discovery, state cells, route generation, settings validation, baseline decision logic, episode wiring and the comparison tool. They do not need SUMO.
+The tests cover the OSM import helpers (bounding box order, bounds check, clipping, turn restrictions, arms, phase plan) and the committed Koteshwor network, network discovery, state cells, route generation, settings validation, baseline decision logic, episode wiring, checkpoint saving, the Koteshwor demand presets and the comparison tool (including throughput and grouping by demand). They do not need SUMO.
 
 ### Inspect the intersection without the agent
 
@@ -191,6 +210,7 @@ Configs live in `settings/` and are validated at runtime.
 - `tls_id`: traffic light to control; `null` (default) uses the only traffic light in the network.
 - `signal_program`: tlLogic file in the network folder whose green phases are the actions (for example `phases_per_approach.add.xml` for Koteshwor); `null` (default) uses the program in the net file.
 - `cells_per_lane`: state cells per incoming lane (default `5`). State size = incoming lanes × `cells_per_lane`. Testing reuses the value saved with the model.
+- `checkpoint_every`: save a checkpoint of the model every N episodes into `checkpoints/` of the run (default `100`; `0` turns checkpoints off).
 
 `testing_settings.yaml`
 
@@ -208,6 +228,7 @@ Each training run writes to the chosen output training folder:
 
 - `trained_model.pt`: serialized PyTorch model.
 - `training_settings.yaml`: copy of the settings used.
+- `checkpoints/episode_NNNN/`: the model after NNNN episodes (`trained_model.pt` + `training_settings.yaml`), every `checkpoint_every` episodes.
 - `plot_reward.png`, `plot_delay.png`, `plot_queue.png` and matching `*_data.txt` files.
 - Testing outputs are saved within the training folder in a dedicated testing subfolder with reward and queue plots plus data.
 
@@ -221,9 +242,13 @@ Each test run (`tlcs test` or `tlcs baseline`) writes:
 `tlcs compare` writes to its `--out-path` (default `comparison/`):
 
 - `compare_wait.png`: average waiting time per vehicle (mean of `waitingTime` in `tripinfo.xml`).
-- `compare_queue.png`: queue length over time (moving average, set with `--smooth`).
-- `compare_reward.png`: cumulative negative reward over time.
-- `summary.csv`: one row per run with mean values. The same table is printed to the terminal.
+- `compare_queue_mean.png`: mean queue length over the episode.
+- `compare_throughput.png`: throughput, the number of vehicles that finished their trip (arrival time set in `tripinfo.xml`) before the episode ended.
+- `compare_queue.png`: queue length over time (moving average, set with `--smooth`). Only when all runs have the same demand.
+- `compare_reward.png`: cumulative negative reward over time. Only when all runs have the same demand.
+- `summary.csv`: one row per run with its demand, average waiting time, average entry delay, mean and max queue, throughput, cumulative negative reward and vehicle count. The entry delay (SUMO `departDelay`) is how long cars waited to *enter* the map because their entry lane was full, meaning the queue reached the map edge. It is not part of the waiting time, so read the two together under heavy traffic. The same table is printed to the terminal.
+
+With runs at several demands, the three bar charts are grouped by demand (see [Baselines and comparison](#baselines-and-comparison)).
 
 Runs saved before these extra files existed can still be compared. Waiting time is then shown as `n/a`, and rewards are plotted against action index.
 
@@ -237,11 +262,16 @@ Runs saved before these extra files existed can still be compared. Waiting time 
 - `src/tlcs/main.py`: orchestrates training/testing loops and stats aggregation.
 - `src/tlcs/agent.py`, `model.py`, `memory.py`: epsilon-greedy policy, MLP, and replay buffer.
 - `scripts/import_osm.py`: imports a junction from OpenStreetMap and verifies it (see [Koteshwor](#koteshwor-openstreetmap-import)); `src/tlcs/osm_import.py` holds its reusable, tested parts.
+- `scripts/eval_checkpoints.py`: tests every checkpoint of a training run and plots the results against training episodes. `scripts/plot_learning_curves.py`: learning curves of several runs side by side.
+- `docs/koteshwor_results.md`: Koteshwor results, 100 vs 1000 training episodes vs baselines at three demand levels.
+- `docs/final/`: presentation package (figures, tables, training-length comparison, demo instructions) and `limitations.md`.
+- `scripts/demo_koteshwor.py`: SUMO-GUI demo for recording: Koteshwor at high demand, best DQN, then fixed-time. `scripts/plot_network_bbox.py`: picture of an imported network with its bounding-box coordinates.
 - `src/tlcs/network.py`: reads the junction (traffic light, lanes, movements, green/yellow states, routes) from the network file.
 - `src/tlcs/env.py`: SUMO wrapper (state extraction, reward, action execution).
 - `src/tlcs/generator.py`: per-episode route generation.
 - `src/tlcs/plots.py`: saves plots plus raw data.
 - `intersection/<network>/`: one folder per network (`original`, `t_junction`, `koteshwor`), each with its `*.net.xml` and `sumo_config.sumocfg`. `koteshwor/` also has `bbox.yaml`, the downloaded `map.osm`, `phases_per_approach.add.xml` and `network.png`.
+- `media/`: README figures (`env.png` for the original intersection, `koteshwor_sumo.png` for Koteshwor in SUMO).
 - `settings/`: YAML configs for training and testing (`training_settings.yaml` / `testing_settings.yaml` for `original`, `t_junction_*.yaml` for the T-junction, `koteshwor_*.yaml` for Koteshwor).
 
 ## Networks
@@ -277,6 +307,59 @@ netconvert --lefthand --no-turnarounds --node-files t_junction.nod.xml --edge-fi
 ## Koteshwor (OpenStreetMap import)
 
 `intersection/koteshwor/` is the real **Koteshwor junction, Kathmandu, Nepal** (27.6786 N, 85.3494 E), imported from OpenStreetMap. It is a 3-arm junction with left-hand traffic: **N** Kathmandu Ring Road, **S** Araniko Highway and **SW** Kathmandu Ring Road. A free left-turn slip lane takes Araniko traffic to the SW Ring Road, bypassing the signal. Traffic is synthetic and cars only.
+
+### Methodology on Koteshwor
+
+<p align="center">
+  <img src="media/koteshwor_sumo.png" width="520" alt="Koteshwor network in SUMO"/>
+</p>
+<p align="center">
+  <em>The Koteshwor junction as built in SUMO from the OpenStreetMap export, at t = 1500 s of the test episode (seed 10000) under the per-approach signal plan. Bars at the stop lines show the signal of each link; red cars are halted. The SW-arm green is on, and the N queue waits at red.</em>
+</p>
+
+The learning method is the same as on the 4-way intersection (see [Methodology](#methodology)). Only the network differs, and everything about it is read from `environment.net.xml` and `phases_per_approach.add.xml`. Settings: `settings/koteshwor_training.yaml` and `settings/koteshwor_testing.yaml`.
+
+#### Koteshwor: scenario and state
+
+- The map covers the box 27.677–27.681 N, 85.347–85.351 E (about 280 m × 440 m in SUMO). It is built from OSM as described in [Import](#import): left-hand traffic, arterial roads only, the 7 OSM junction nodes joined into one signalised junction.
+- 8 incoming lanes are controlled by the light: 2 on N (Ring Road, 239 m), 2 + 2 on the two SW Ring Road roadways (251 m and 256 m), 2 on S (Araniko Highway, 35 m before the slip lane splits off).
+- Each lane is split into 5 cells from the stop line. On the long arms the cells grow geometrically (N: 7.5 / 23 / 53 / 115 / 239 m). The 35 m Araniko lanes are too short for that and get 5 equal cells of about 7 m.
+- State vector: 8 lanes × 5 cells = **40** binary values (`1` if a vehicle is in the cell).
+
+#### Koteshwor: actions and signals
+
+There are **3 actions**, one green per approach, from `phases_per_approach.add.xml`:
+
+| Action | Green for | Movements |
+| --- | --- | --- |
+| 0 | N (Ring Road) | N → S straight, N → SW right |
+| 1 | S (Araniko Highway) | S → N straight |
+| 2 | SW (both Ring Road roadways) | SW → N left, SW → S right |
+
+- Each approach gets a protected green, so no two approaches move at the same time.
+- On a change of action, the yellow of the current approach (`yellow_duration`, 4 s) is shown first, then the new green for `green_duration` (10 s).
+- The free left turn from Araniko Highway to the SW Ring Road is a slip lane outside the junction and is never signalised.
+
+#### Koteshwor: reward
+
+Same as the 4-way intersection: the change in cumulative waiting time on the 4 incoming edges (N, both SW roadways, S).
+
+```
+reward = previous_total_wait - current_total_wait
+```
+
+On the S arm only the 35 m before the junction counts. See [Known limitations](#known-limitations).
+
+#### Koteshwor: traffic generation
+
+- 1000 cars per episode of 5400 steps (90 minutes), with Weibull departure times, as on the 4-way intersection.
+- Routes are the junction's 7 movements. Each runs from the map edge through the junction to the map edge. Imported roads are split into several edges, so a route can have 2–3 edges.
+- With `turn_chance: 0.25`, 75 % of cars take a straight movement (N → S or S → N) and 25 % take one of the 5 turns. The two SW → SW U-turns get no traffic, and no traffic is generated on the slip lane.
+- Seeds: the episode index in training, `episode_seed: 10000` in testing.
+
+#### Koteshwor: policy and learning loop
+
+Unchanged from the 4-way intersection: epsilon-greedy DQN with experience replay, 100 training episodes, `gamma: 0.75`, 4 layers × 400 units, 800 replay batches of 100 per episode. The input size (40) and output size (3) come from the network at runtime. The baselines (`fixed`, `random`, `lqf`, `maxpressure`, `actuated`) run on Koteshwor with the same test seed, through the same code path.
 
 ### Import
 
@@ -326,6 +409,20 @@ tlcs test     --settings-file settings/koteshwor_testing.yaml  --model-path mode
 tlcs baseline --settings-file settings/koteshwor_testing.yaml  --controller actuated --test-name k-actuated --out-path baselines/koteshwor
 tlcs live     --settings-file settings/koteshwor_testing.yaml  --model-path model/koteshwor
 ```
+
+**Demand presets.** Three testing files differ from `koteshwor_testing.yaml` only in demand and in `gui: false`. All use the same seed (10000):
+
+| Preset | File | Cars per 90-minute episode |
+| --- | --- | --- |
+| low | `settings/koteshwor_testing_low.yaml` | 600 |
+| medium | `settings/koteshwor_testing_medium.yaml` | 1000 (same as training) |
+| high | `settings/koteshwor_testing_high.yaml` | 1400 |
+
+`settings/koteshwor_training_1000.yaml` is `koteshwor_training.yaml` with `total_episodes: 1000`. The 100- vs 1000-episode comparison against the baselines is in [docs/koteshwor_results.md](docs/koteshwor_results.md). The presentation version and its limitations are in [docs/final/](docs/final/README.md).
+
+**Demo for a recording:** `uv run python scripts/demo_koteshwor.py` opens SUMO-GUI full screen at high demand and runs the best DQN, then fixed-time, on identical traffic. Options: `--minutes` (default 45), `--delay` (ms per step, default 20), `--no-pause`, and `--headless` (no GUI, to check that it runs). Results go to `live/demo-koteshwor-high/`.
+
+**Network picture:** `uv run python scripts/plot_network_bbox.py --network koteshwor --out docs/final/figures/network_bbox.png` draws the imported roads with the bounding box and its corner coordinates.
 
 ### Check and fix the network in netedit
 
