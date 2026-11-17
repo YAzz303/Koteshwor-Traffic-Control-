@@ -1,0 +1,894 @@
+[22:05:33] INFO     Network 'koteshwor': traffic light              main.py:122
+                    'cluster_14141137404_14141137405_14141137406_31            
+                    228768_#3more', 8 incoming lanes, state size               
+                    40, 3 actions                                              
+           INFO     Creating new model for the Agent                model.py:90
+[22:05:34] INFO     Episode 1 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_827' to match departure speed 10.00 (max 9.73).
+[22:05:37] INFO             Epsilon: 1.0                            main.py:168
+           INFO             Reward: -27078.0                        main.py:169
+           INFO             Cumulative wait: 58035                  main.py:170
+           INFO             Avg queue: 10.7                         main.py:171
+           INFO     Episode 2 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_662' to match departure speed 10.00 (max 9.80).
+[22:05:47] INFO             Epsilon: 0.99                           main.py:168
+           INFO             Reward: -31331.0                        main.py:169
+           INFO             Cumulative wait: 62074                  main.py:170
+           INFO             Avg queue: 11.5                         main.py:171
+           INFO     Episode 3 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_187' to match departure speed 10.00 (max 9.91).
+Warning: Vehicle '648697035#0_to_194607856#0_651' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2022.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_859' to match departure speed 10.00 (max 8.73).
+[22:05:58] INFO             Epsilon: 0.98                           main.py:168
+           INFO             Reward: -22094.0                        main.py:169
+           INFO             Cumulative wait: 42015                  main.py:170
+           INFO             Avg queue: 7.8                          main.py:171
+           INFO     Episode 4 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_215507255#0_478' to match departure speed 10.00 (max 9.79).
+Warning: Vehicle '648697035#0_to_194607856#0_546' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1994.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+Warning: Choosing new speed factor 1.35 for vehicle '193289327#0_to_194607856#0_940' to match departure speed 10.00 (max 9.87).
+[22:06:08] INFO             Epsilon: 0.97                           main.py:168
+           INFO             Reward: -31656.0                        main.py:169
+           INFO             Cumulative wait: 41809                  main.py:170
+           INFO             Avg queue: 7.7                          main.py:171
+           INFO     Episode 5 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_459' to match departure speed 10.00 (max 8.56).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_495' to match departure speed 10.00 (max 9.50).
+Warning: Vehicle '1126627065#0_to_194607856#0_532' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1643.00.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_835' to match departure speed 10.00 (max 8.46).
+[22:06:18] INFO             Epsilon: 0.96                           main.py:168
+           INFO             Reward: -27368.0                        main.py:169
+           INFO             Cumulative wait: 41168                  main.py:170
+           INFO             Avg queue: 7.6                          main.py:171
+           INFO     Episode 6 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_215507255#0_201' to match departure speed 10.00 (max 9.73).
+Warning: Vehicle '1126627065#0_to_194607856#0_240' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1072.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_284' to match departure speed 10.00 (max 8.43).
+[22:06:29] INFO             Epsilon: 0.95                           main.py:168
+           INFO             Reward: -23966.0                        main.py:169
+           INFO             Cumulative wait: 47229                  main.py:170
+           INFO             Avg queue: 8.7                          main.py:171
+           INFO     Episode 7 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_418' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_9_0' with decel=9.00, wished=4.50, severity=1.00, time=1447.00.
+Warning: Vehicle '1126627065#0_to_193289326#1_675' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2048.00.
+[22:06:39] INFO             Epsilon: 0.94                           main.py:168
+           INFO             Reward: -29173.0                        main.py:169
+           INFO             Cumulative wait: 37994                  main.py:170
+           INFO             Avg queue: 7.0                          main.py:171
+           INFO     Episode 8 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_649' to match departure speed 10.00 (max 9.03).
+Warning: Vehicle '648697035#0_to_194607856#0_850' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2734.00.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_872' to match departure speed 10.00 (max 9.53).
+[22:06:50] INFO             Epsilon: 0.93                           main.py:168
+           INFO             Reward: -27354.0                        main.py:169
+           INFO             Cumulative wait: 50883                  main.py:170
+           INFO             Avg queue: 9.4                          main.py:171
+           INFO     Episode 9 of 100                                main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_193289326#1_578' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1840.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_948' to match departure speed 10.00 (max 8.83).
+[22:07:00] INFO             Epsilon: 0.92                           main.py:168
+           INFO             Reward: -17163.0                        main.py:169
+           INFO             Cumulative wait: 29632                  main.py:170
+           INFO             Avg queue: 5.5                          main.py:171
+           INFO     Episode 10 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '648697035#0_to_194607856#0_234' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1006.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_255' to match departure speed 10.00 (max 7.89).
+[22:07:10] INFO             Epsilon: 0.91                           main.py:168
+           INFO             Reward: -21291.0                        main.py:169
+           INFO             Cumulative wait: 41606                  main.py:170
+           INFO             Avg queue: 7.7                          main.py:171
+           INFO     Episode 11 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+[22:07:20] INFO             Epsilon: 0.9                            main.py:168
+           INFO             Reward: -19682.0                        main.py:169
+           INFO             Cumulative wait: 44873                  main.py:170
+           INFO             Avg queue: 8.3                          main.py:171
+           INFO     Episode 12 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_842' to match departure speed 10.00 (max 8.75).
+Warning: Vehicle '648697035#0_to_194607856#0_896' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2984.00.
+[22:07:31] INFO             Epsilon: 0.89                           main.py:168
+           INFO             Reward: -17634.0                        main.py:169
+           INFO             Cumulative wait: 34447                  main.py:170
+           INFO             Avg queue: 6.4                          main.py:171
+           INFO     Episode 13 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_199' to match departure speed 10.00 (max 9.21).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_458' to match departure speed 10.00 (max 8.85).
+Warning: Vehicle '648697035#0_to_194607856#0_490' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_9_0' with decel=9.00, wished=4.50, severity=1.00, time=1587.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_940' to match departure speed 10.00 (max 9.87).
+[22:07:41] INFO             Epsilon: 0.88                           main.py:168
+           INFO             Reward: -21199.0                        main.py:169
+           INFO             Cumulative wait: 45507                  main.py:170
+           INFO             Avg queue: 8.4                          main.py:171
+           INFO     Episode 14 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_222' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=980.00.
+Warning: Vehicle '648697035#0_to_194607856#0_712' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2152.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_858' to match departure speed 10.00 (max 9.39).
+[22:07:51] INFO             Epsilon: 0.87                           main.py:168
+           INFO             Reward: -14961.0                        main.py:169
+           INFO             Cumulative wait: 30717                  main.py:170
+           INFO             Avg queue: 5.7                          main.py:171
+           INFO     Episode 15 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '1126627065#0_to_193289326#1_413' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_4_1' with decel=9.00, wished=4.50, severity=1.00, time=1399.00.
+[22:08:02] INFO             Epsilon: 0.86                           main.py:168
+           INFO             Reward: -14605.0                        main.py:169
+           INFO             Cumulative wait: 26622                  main.py:170
+           INFO             Avg queue: 4.9                          main.py:171
+           INFO     Episode 16 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_507' to match departure speed 10.00 (max 7.68).
+Warning: Vehicle '648697035#0_to_193289326#1_893' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_8_0' with decel=9.00, wished=4.50, severity=1.00, time=3029.00.
+[22:08:14] INFO             Epsilon: 0.85                           main.py:168
+           INFO             Reward: -16792.0                        main.py:169
+           INFO             Cumulative wait: 33302                  main.py:170
+           INFO             Avg queue: 6.2                          main.py:171
+           INFO     Episode 17 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_271' to match departure speed 10.00 (max 9.64).
+Warning: Choosing new speed factor 1.37 for vehicle '193289327#0_to_194607856#0_835' to match departure speed 10.00 (max 8.46).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_898' to match departure speed 10.00 (max 8.99).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_940' to match departure speed 10.00 (max 9.87).
+[22:08:25] INFO             Epsilon: 0.84                           main.py:168
+           INFO             Reward: -18252.0                        main.py:169
+           INFO             Cumulative wait: 40233                  main.py:170
+           INFO             Avg queue: 7.5                          main.py:171
+           INFO     Episode 18 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_222' to match departure speed 10.00 (max 9.29).
+Warning: Vehicle '648697035#0_to_193289326#1_489' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_8_0' with decel=9.00, wished=4.50, severity=1.00, time=1766.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_772' to match departure speed 10.00 (max 9.87).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_847' to match departure speed 10.00 (max 9.98).
+[22:08:34] INFO             Epsilon: 0.83                           main.py:168
+           INFO             Reward: -12236.0                        main.py:169
+           INFO             Cumulative wait: 25492                  main.py:170
+           INFO             Avg queue: 4.7                          main.py:171
+           INFO     Episode 19 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_284' to match departure speed 10.00 (max 8.43).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_469' to match departure speed 10.00 (max 9.70).
+Warning: Choosing new speed factor 1.22 for vehicle '193289327#0_to_194607856#0_813' to match departure speed 10.00 (max 9.63).
+Warning: Vehicle '648697035#0_to_194607856#0_915' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=3158.00.
+[22:08:43] INFO             Epsilon: 0.82                           main.py:168
+           INFO             Reward: -15407.0                        main.py:169
+           INFO             Cumulative wait: 33070                  main.py:170
+           INFO             Avg queue: 6.1                          main.py:171
+           INFO     Episode 20 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_181' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_6_0' with decel=9.00, wished=4.50, severity=1.00, time=926.00.
+Warning: Vehicle '648697035#0_to_194607856#0_189' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_9_0' with decel=9.00, wished=4.50, severity=1.00, time=969.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_260' to match departure speed 10.00 (max 8.37).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_604' to match departure speed 10.00 (max 9.97).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_783' to match departure speed 10.00 (max 9.82).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_847' to match departure speed 10.00 (max 9.98).
+[22:08:53] INFO             Epsilon: 0.81                           main.py:168
+           INFO             Reward: -13585.0                        main.py:169
+           INFO             Cumulative wait: 27243                  main.py:170
+           INFO             Avg queue: 5.0                          main.py:171
+           INFO     Episode 21 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_215507255#0_199' to match departure speed 10.00 (max 9.21).
+Warning: Vehicle '1126627065#0_to_193289326#1_830' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2977.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_872' to match departure speed 10.00 (max 9.53).
+[22:09:03] INFO             Epsilon: 0.8                            main.py:168
+           INFO             Reward: -16737.0                        main.py:169
+           INFO             Cumulative wait: 30933                  main.py:170
+           INFO             Avg queue: 5.7                          main.py:171
+           INFO     Episode 22 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.22 for vehicle '193289327#0_to_194607856#0_349' to match departure speed 10.00 (max 9.99).
+[22:09:13] INFO             Epsilon: 0.79                           main.py:168
+           INFO             Reward: -16967.0                        main.py:169
+           INFO             Cumulative wait: 33804                  main.py:170
+           INFO             Avg queue: 6.3                          main.py:171
+           INFO     Episode 23 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_215507255#0_187' to match departure speed 10.00 (max 9.91).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_254' to match departure speed 10.00 (max 9.78).
+Warning: Choosing new speed factor 1.30 for vehicle '193289327#0_to_194607856#0_507' to match departure speed 10.00 (max 7.68).
+[22:09:23] INFO             Epsilon: 0.78                           main.py:168
+           INFO             Reward: -15999.0                        main.py:169
+           INFO             Cumulative wait: 32149                  main.py:170
+           INFO             Avg queue: 6.0                          main.py:171
+           INFO     Episode 24 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.37 for vehicle '193289327#0_to_194607856#0_813' to match departure speed 10.00 (max 9.63).
+Warning: Vehicle '648697035#0_to_194607856#0_856' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=3062.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_909' to match departure speed 10.00 (max 9.96).
+[22:09:33] INFO             Epsilon: 0.77                           main.py:168
+           INFO             Reward: -13751.0                        main.py:169
+           INFO             Cumulative wait: 25939                  main.py:170
+           INFO             Avg queue: 4.8                          main.py:171
+           INFO     Episode 25 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_129' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=847.00.
+Warning: Vehicle '648697035#0_to_194607856#0_214' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1094.00.
+[22:09:44] INFO             Epsilon: 0.76                           main.py:168
+           INFO             Reward: -14896.0                        main.py:169
+           INFO             Cumulative wait: 29812                  main.py:170
+           INFO             Avg queue: 5.5                          main.py:171
+           INFO     Episode 26 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_537' to match departure speed 10.00 (max 9.44).
+[22:09:54] INFO             Epsilon: 0.75                           main.py:168
+           INFO             Reward: -11384.0                        main.py:169
+           INFO             Cumulative wait: 25404                  main.py:170
+           INFO             Avg queue: 4.7                          main.py:171
+           INFO     Episode 27 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_199' to match departure speed 10.00 (max 9.21).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_276' to match departure speed 10.00 (max 9.69).
+Warning: Vehicle '648697035#0_to_194607856#0_323' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1196.00.
+Warning: Vehicle '648697035#0_to_194607856#0_643' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2046.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_867' to match departure speed 10.00 (max 8.37).
+[22:10:04] INFO             Epsilon: 0.74                           main.py:168
+           INFO             Reward: -12444.0                        main.py:169
+           INFO             Cumulative wait: 27474                  main.py:170
+           INFO             Avg queue: 5.1                          main.py:171
+           INFO     Episode 28 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_222' to match departure speed 10.00 (max 9.29).
+[22:10:14] INFO             Epsilon: 0.73                           main.py:168
+           INFO             Reward: -10964.0                        main.py:169
+           INFO             Cumulative wait: 23681                  main.py:170
+           INFO             Avg queue: 4.4                          main.py:171
+           INFO     Episode 29 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_193289326#1_172' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=706.00.
+Warning: Vehicle '1126627065#0_to_193289326#1_598' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1602.00.
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_215507255#0_674' to match departure speed 10.00 (max 9.86).
+Warning: Choosing new speed factor 1.35 for vehicle '193289327#0_to_194607856#0_897' to match departure speed 10.00 (max 9.74).
+[22:10:24] INFO             Epsilon: 0.72                           main.py:168
+           INFO             Reward: -17622.0                        main.py:169
+           INFO             Cumulative wait: 27490                  main.py:170
+           INFO             Avg queue: 5.1                          main.py:171
+           INFO     Episode 30 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_197' to match departure speed 10.00 (max 9.71).
+Warning: Vehicle '648697035#0_to_194607856#0_661' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1992.00.
+[22:10:33] INFO             Epsilon: 0.71                           main.py:168
+           INFO             Reward: -15999.0                        main.py:169
+           INFO             Cumulative wait: 27623                  main.py:170
+           INFO             Avg queue: 5.1                          main.py:171
+           INFO     Episode 31 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_215507255#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_222' to match departure speed 10.00 (max 9.29).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_858' to match departure speed 10.00 (max 9.39).
+[22:10:43] INFO             Epsilon: 0.7                            main.py:168
+           INFO             Reward: -13747.0                        main.py:169
+           INFO             Cumulative wait: 31853                  main.py:170
+           INFO             Avg queue: 5.9                          main.py:171
+           INFO     Episode 32 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_564' to match departure speed 10.00 (max 9.27).
+Warning: Vehicle '648697035#0_to_194607856#0_813' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_9_0' with decel=9.00, wished=4.50, severity=1.00, time=2469.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_872' to match departure speed 10.00 (max 9.53).
+[22:10:52] INFO             Epsilon: 0.69                           main.py:168
+           INFO             Reward: -13831.0                        main.py:169
+           INFO             Cumulative wait: 30376                  main.py:170
+           INFO             Avg queue: 5.6                          main.py:171
+           INFO     Episode 33 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_243' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1100.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_284' to match departure speed 10.00 (max 8.43).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_459' to match departure speed 10.00 (max 8.56).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_522' to match departure speed 10.00 (max 9.62).
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_709' to match departure speed 10.00 (max 8.81).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+[22:11:01] INFO             Epsilon: 0.68                           main.py:168
+           INFO             Reward: -10576.0                        main.py:169
+           INFO             Cumulative wait: 22209                  main.py:170
+           INFO             Avg queue: 4.1                          main.py:171
+           INFO     Episode 34 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+[22:11:11] INFO             Epsilon: 0.67                           main.py:168
+           INFO             Reward: -11333.0                        main.py:169
+           INFO             Cumulative wait: 24221                  main.py:170
+           INFO             Avg queue: 4.5                          main.py:171
+           INFO     Episode 35 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_513' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1438.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_725' to match departure speed 10.00 (max 9.57).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_858' to match departure speed 10.00 (max 9.39).
+[22:11:21] INFO             Epsilon: 0.66                           main.py:168
+           INFO             Reward: -21793.0                        main.py:169
+           INFO             Cumulative wait: 34648                  main.py:170
+           INFO             Avg queue: 6.4                          main.py:171
+           INFO     Episode 36 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.22 for vehicle '193289327#0_to_194607856#0_341' to match departure speed 10.00 (max 9.61).
+[22:11:31] INFO             Epsilon: 0.65                           main.py:168
+           INFO             Reward: -20040.0                        main.py:169
+           INFO             Cumulative wait: 48436                  main.py:170
+           INFO             Avg queue: 9.0                          main.py:171
+           INFO     Episode 37 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_197' to match departure speed 10.00 (max 9.71).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_813' to match departure speed 10.00 (max 9.63).
+[22:11:40] INFO             Epsilon: 0.64                           main.py:168
+           INFO             Reward: -12883.0                        main.py:169
+           INFO             Cumulative wait: 26474                  main.py:170
+           INFO             Avg queue: 4.9                          main.py:171
+           INFO     Episode 38 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_20' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=196.00.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_197' to match departure speed 10.00 (max 9.71).
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_341' to match departure speed 10.00 (max 9.61).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_459' to match departure speed 10.00 (max 8.56).
+Warning: Vehicle '1126627065#0_to_194607856#0_647' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2009.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_215507255#0_772' to match departure speed 10.00 (max 9.87).
+Warning: Vehicle '648697035#0_to_193289326#1_883' performs emergency braking on lane '648697035#0_0' with decel=9.00, wished=4.50, severity=1.00, time=2885.00.
+[22:11:50] INFO             Epsilon: 0.63                           main.py:168
+           INFO             Reward: -13031.0                        main.py:169
+           INFO             Cumulative wait: 24665                  main.py:170
+           INFO             Avg queue: 4.6                          main.py:171
+           INFO     Episode 39 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_469' to match departure speed 10.00 (max 9.70).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_535' to match departure speed 10.00 (max 9.55).
+Warning: Vehicle '648697035#0_to_194607856#0_690' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2369.00.
+[22:11:59] INFO             Epsilon: 0.62                           main.py:168
+           INFO             Reward: -11801.0                        main.py:169
+           INFO             Cumulative wait: 24734                  main.py:170
+           INFO             Avg queue: 4.6                          main.py:171
+           INFO     Episode 40 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_104' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=464.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_858' to match departure speed 10.00 (max 9.39).
+[22:12:09] INFO             Epsilon: 0.61                           main.py:168
+           INFO             Reward: -12261.0                        main.py:169
+           INFO             Cumulative wait: 28779                  main.py:170
+           INFO             Avg queue: 5.3                          main.py:171
+           INFO     Episode 41 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_85' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=437.00.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_214' to match departure speed 10.00 (max 9.26).
+Warning: Vehicle '1126627065#0_to_194607856#0_659' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1727.00.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+[22:12:19] INFO             Epsilon: 0.6                            main.py:168
+           INFO             Reward: -17131.0                        main.py:169
+           INFO             Cumulative wait: 38784                  main.py:170
+           INFO             Avg queue: 7.2                          main.py:171
+           INFO     Episode 42 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '1126627065#0_to_193289326#1_455' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1718.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_551' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_568' to match departure speed 10.00 (max 9.52).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_868' to match departure speed 10.00 (max 9.78).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_998' to match departure speed 10.00 (max 8.11).
+[22:12:28] INFO             Epsilon: 0.59                           main.py:168
+           INFO             Reward: -11815.0                        main.py:169
+           INFO             Cumulative wait: 25458                  main.py:170
+           INFO             Avg queue: 4.7                          main.py:171
+           INFO     Episode 43 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_138' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=706.00.
+Warning: Vehicle '1126627065#0_to_193289326#1_778' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2416.00.
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_993' to match departure speed 10.00 (max 9.94).
+[22:12:38] INFO             Epsilon: 0.58                           main.py:168
+           INFO             Reward: -9406.0                         main.py:169
+           INFO             Cumulative wait: 22870                  main.py:170
+           INFO             Avg queue: 4.2                          main.py:171
+           INFO     Episode 44 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_283' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1222.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_927' to match departure speed 10.00 (max 9.96).
+[22:12:48] INFO             Epsilon: 0.57                           main.py:168
+           INFO             Reward: -10060.0                        main.py:169
+           INFO             Cumulative wait: 21308                  main.py:170
+           INFO             Avg queue: 3.9                          main.py:171
+           INFO     Episode 45 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_201' to match departure speed 10.00 (max 9.73).
+Warning: Vehicle '1126627065#0_to_194607856#0_634' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1849.00.
+[22:12:58] INFO             Epsilon: 0.56                           main.py:168
+           INFO             Reward: -8993.0                         main.py:169
+           INFO             Cumulative wait: 24833                  main.py:170
+           INFO             Avg queue: 4.6                          main.py:171
+           INFO     Episode 46 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_193289326#1_78' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=530.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_690' to match departure speed 10.00 (max 9.97).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_922' to match departure speed 10.00 (max 9.86).
+[22:13:08] INFO             Epsilon: 0.55                           main.py:168
+           INFO             Reward: -10733.0                        main.py:169
+           INFO             Cumulative wait: 26963                  main.py:170
+           INFO             Avg queue: 5.0                          main.py:171
+           INFO     Episode 47 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_199' to match departure speed 10.00 (max 9.21).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_215507255#0_455' to match departure speed 10.00 (max 9.87).
+Warning: Choosing new speed factor 1.30 for vehicle '193289327#0_to_194607856#0_507' to match departure speed 10.00 (max 7.68).
+Warning: Choosing new speed factor 1.22 for vehicle '193289327#0_to_194607856#0_778' to match departure speed 10.00 (max 8.47).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_842' to match departure speed 10.00 (max 8.75).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_859' to match departure speed 10.00 (max 8.73).
+[22:13:17] INFO             Epsilon: 0.54                           main.py:168
+           INFO             Reward: -8631.0                         main.py:169
+           INFO             Cumulative wait: 20863                  main.py:170
+           INFO             Avg queue: 3.9                          main.py:171
+           INFO     Episode 48 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_197' to match departure speed 10.00 (max 9.71).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_569' to match departure speed 10.00 (max 9.61).
+Warning: Choosing new speed factor 1.37 for vehicle '193289327#0_to_194607856#0_846' to match departure speed 10.00 (max 8.42).
+[22:13:27] INFO             Epsilon: 0.53                           main.py:168
+           INFO             Reward: -9448.0                         main.py:169
+           INFO             Cumulative wait: 20146                  main.py:170
+           INFO             Avg queue: 3.7                          main.py:171
+           INFO     Episode 49 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_287' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_6_0' with decel=9.00, wished=4.50, severity=1.00, time=1216.00.
+Warning: Vehicle '648697035#0_to_194607856#0_672' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2190.00.
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_927' to match departure speed 10.00 (max 9.96).
+[22:13:37] INFO             Epsilon: 0.52                           main.py:168
+           INFO             Reward: -11676.0                        main.py:169
+           INFO             Cumulative wait: 25114                  main.py:170
+           INFO             Avg queue: 4.7                          main.py:171
+           INFO     Episode 50 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.22 for vehicle '193289327#0_to_194607856#0_349' to match departure speed 10.00 (max 9.99).
+Warning: Vehicle '1126627065#0_to_194607856#0_519' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1752.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_796' to match departure speed 10.00 (max 9.84).
+[22:13:47] INFO             Epsilon: 0.51                           main.py:168
+           INFO             Reward: -8095.0                         main.py:169
+           INFO             Cumulative wait: 20565                  main.py:170
+           INFO             Avg queue: 3.8                          main.py:171
+           INFO     Episode 51 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+[22:13:57] INFO             Epsilon: 0.5                            main.py:168
+           INFO             Reward: -10209.0                        main.py:169
+           INFO             Cumulative wait: 24803                  main.py:170
+           INFO             Avg queue: 4.6                          main.py:171
+           INFO     Episode 52 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_65' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=494.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_842' to match departure speed 10.00 (max 8.75).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_948' to match departure speed 10.00 (max 8.83).
+[22:14:06] INFO             Epsilon: 0.49                           main.py:168
+           INFO             Reward: -8136.0                         main.py:169
+           INFO             Cumulative wait: 18703                  main.py:170
+           INFO             Avg queue: 3.5                          main.py:171
+           INFO     Episode 53 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.30 for vehicle '193289327#0_to_194607856#0_535' to match departure speed 10.00 (max 9.55).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_686' to match departure speed 10.00 (max 9.91).
+[22:14:16] INFO             Epsilon: 0.48                           main.py:168
+           INFO             Reward: -12142.0                        main.py:169
+           INFO             Cumulative wait: 27968                  main.py:170
+           INFO             Avg queue: 5.2                          main.py:171
+           INFO     Episode 54 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.37 for vehicle '193289327#0_to_194607856#0_828' to match departure speed 10.00 (max 8.98).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_867' to match departure speed 10.00 (max 8.37).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_971' to match departure speed 10.00 (max 9.45).
+[22:14:27] INFO             Epsilon: 0.47                           main.py:168
+           INFO             Reward: -9612.0                         main.py:169
+           INFO             Cumulative wait: 23933                  main.py:170
+           INFO             Avg queue: 4.4                          main.py:171
+           INFO     Episode 55 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_881' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2556.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_909' to match departure speed 10.00 (max 9.96).
+[22:14:37] INFO             Epsilon: 0.46                           main.py:168
+           INFO             Reward: -9239.0                         main.py:169
+           INFO             Cumulative wait: 26504                  main.py:170
+           INFO             Avg queue: 4.9                          main.py:171
+           INFO     Episode 56 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '1126627065#0_to_194607856#0_313' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1230.00.
+Warning: Vehicle '1126627065#0_to_193289326#1_390' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1440.00.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_215507255#0_727' to match departure speed 10.00 (max 9.11).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_868' to match departure speed 10.00 (max 9.78).
+[22:14:47] INFO             Epsilon: 0.45                           main.py:168
+           INFO             Reward: -9874.0                         main.py:169
+           INFO             Cumulative wait: 23741                  main.py:170
+           INFO             Avg queue: 4.4                          main.py:171
+           INFO     Episode 57 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_214' to match departure speed 10.00 (max 9.26).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_662' to match departure speed 10.00 (max 9.80).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_897' to match departure speed 10.00 (max 9.74).
+[22:14:57] INFO             Epsilon: 0.44                           main.py:168
+           INFO             Reward: -12284.0                        main.py:169
+           INFO             Cumulative wait: 27464                  main.py:170
+           INFO             Avg queue: 5.1                          main.py:171
+           INFO     Episode 58 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+[22:15:07] INFO             Epsilon: 0.43                           main.py:168
+           INFO             Reward: -9661.0                         main.py:169
+           INFO             Cumulative wait: 22590                  main.py:170
+           INFO             Avg queue: 4.2                          main.py:171
+           INFO     Episode 59 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '648697035#0_to_194607856#0_210' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=855.00.
+Warning: Vehicle '1126627065#0_to_193289326#1_537' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1517.00.
+Warning: Vehicle '1126627065#0_to_193289326#1_756' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2122.00.
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_785' to match departure speed 10.00 (max 8.32).
+[22:15:17] INFO             Epsilon: 0.42                           main.py:168
+           INFO             Reward: -12111.0                        main.py:169
+           INFO             Cumulative wait: 27209                  main.py:170
+           INFO             Avg queue: 5.0                          main.py:171
+           INFO     Episode 60 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_835' to match departure speed 10.00 (max 8.46).
+[22:15:27] INFO             Epsilon: 0.41                           main.py:168
+           INFO             Reward: -10040.0                        main.py:169
+           INFO             Cumulative wait: 28091                  main.py:170
+           INFO             Avg queue: 5.2                          main.py:171
+           INFO     Episode 61 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.30 for vehicle '193289327#0_to_194607856#0_537' to match departure speed 10.00 (max 9.44).
+[22:15:36] INFO             Epsilon: 0.4                            main.py:168
+           INFO             Reward: -7613.0                         main.py:169
+           INFO             Cumulative wait: 17964                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 62 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_215507255#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '648697035#0_to_194607856#0_479' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1728.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_858' to match departure speed 10.00 (max 9.39).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_915' to match departure speed 10.00 (max 9.16).
+[22:15:46] INFO             Epsilon: 0.39                           main.py:168
+           INFO             Reward: -6160.0                         main.py:169
+           INFO             Cumulative wait: 16006                  main.py:170
+           INFO             Avg queue: 3.0                          main.py:171
+           INFO     Episode 63 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_9' to match departure speed 10.00 (max 9.53).
+Warning: Vehicle '648697035#0_to_194607856#0_80' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=518.00.
+Warning: Vehicle '648697035#0_to_194607856#0_726' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2276.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_785' to match departure speed 10.00 (max 8.32).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_927' to match departure speed 10.00 (max 9.96).
+[22:15:56] INFO             Epsilon: 0.38                           main.py:168
+           INFO             Reward: -8629.0                         main.py:169
+           INFO             Cumulative wait: 24049                  main.py:170
+           INFO             Avg queue: 4.5                          main.py:171
+           INFO     Episode 64 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_193289326#1_77' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=518.00.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_222' to match departure speed 10.00 (max 9.29).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_276' to match departure speed 10.00 (max 9.69).
+Warning: Vehicle '1126627065#0_to_194607856#0_926' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2986.00.
+[22:16:06] INFO             Epsilon: 0.37                           main.py:168
+           INFO             Reward: -9307.0                         main.py:169
+           INFO             Cumulative wait: 25378                  main.py:170
+           INFO             Avg queue: 4.7                          main.py:171
+           INFO     Episode 65 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_215507255#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '1126627065#0_to_194607856#0_78' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=478.00.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_199' to match departure speed 10.00 (max 9.21).
+Warning: Choosing new speed factor 1.22 for vehicle '193289327#0_to_194607856#0_341' to match departure speed 10.00 (max 9.61).
+Warning: Vehicle '1126627065#0_to_194607856#0_556' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1787.00.
+Warning: Vehicle '648697035#0_to_193289326#1_721' performs emergency braking on lane '648697035#0_0' with decel=9.00, wished=4.50, severity=1.00, time=2230.00.
+[22:16:16] INFO             Epsilon: 0.36                           main.py:168
+           INFO             Reward: -9736.0                         main.py:169
+           INFO             Cumulative wait: 22314                  main.py:170
+           INFO             Avg queue: 4.1                          main.py:171
+           INFO     Episode 66 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+[22:16:26] INFO             Epsilon: 0.35                           main.py:168
+           INFO             Reward: -7130.0                         main.py:169
+           INFO             Cumulative wait: 20106                  main.py:170
+           INFO             Avg queue: 3.7                          main.py:171
+           INFO     Episode 67 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '648697035#0_to_193289326#1_51' performs emergency braking on lane '648697035#0_0' with decel=9.00, wished=4.50, severity=1.00, time=390.00.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_351' to match departure speed 10.00 (max 9.07).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_553' to match departure speed 10.00 (max 9.35).
+Warning: Choosing new speed factor 1.32 for vehicle '193289327#0_to_194607856#0_888' to match departure speed 10.00 (max 8.54).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_942' to match departure speed 10.00 (max 9.23).
+[22:16:36] INFO             Epsilon: 0.34                           main.py:168
+           INFO             Reward: -7406.0                         main.py:169
+           INFO             Cumulative wait: 18211                  main.py:170
+           INFO             Avg queue: 3.4                          main.py:171
+           INFO     Episode 68 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_172' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=800.00.
+Warning: Vehicle '648697035#0_to_194607856#0_185' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_9_0' with decel=9.00, wished=4.50, severity=1.00, time=844.00.
+Warning: Vehicle '648697035#0_to_193289326#1_514' performs emergency braking on lane '648697035#0_0' with decel=9.00, wished=4.50, severity=1.00, time=1628.00.
+[22:16:46] INFO             Epsilon: 0.33                           main.py:168
+           INFO             Reward: -8832.0                         main.py:169
+           INFO             Cumulative wait: 21927                  main.py:170
+           INFO             Avg queue: 4.1                          main.py:171
+           INFO     Episode 69 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_207' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1003.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_846' to match departure speed 10.00 (max 8.42).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_898' to match departure speed 10.00 (max 8.99).
+[22:16:56] INFO             Epsilon: 0.32                           main.py:168
+           INFO             Reward: -6628.0                         main.py:169
+           INFO             Cumulative wait: 16922                  main.py:170
+           INFO             Avg queue: 3.1                          main.py:171
+           INFO     Episode 70 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_271' to match departure speed 10.00 (max 9.64).
+[22:17:06] INFO             Epsilon: 0.31                           main.py:168
+           INFO             Reward: -7761.0                         main.py:169
+           INFO             Cumulative wait: 18535                  main.py:170
+           INFO             Avg queue: 3.4                          main.py:171
+           INFO     Episode 71 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_752' to match departure speed 10.00 (max 9.80).
+[22:17:16] INFO             Epsilon: 0.3                            main.py:168
+           INFO             Reward: -14579.0                        main.py:169
+           INFO             Cumulative wait: 49105                  main.py:170
+           INFO             Avg queue: 9.1                          main.py:171
+           INFO     Episode 72 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '1126627065#0_to_194607856#0_500' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1504.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_868' to match departure speed 10.00 (max 9.78).
+Warning: Choosing new speed factor 1.31 for vehicle '193289327#0_to_194607856#0_962' to match departure speed 10.00 (max 9.46).
+[22:17:26] INFO             Epsilon: 0.29                           main.py:168
+           INFO             Reward: -11063.0                        main.py:169
+           INFO             Cumulative wait: 27540                  main.py:170
+           INFO             Avg queue: 5.1                          main.py:171
+           INFO     Episode 73 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_962' to match departure speed 10.00 (max 9.46).
+[22:17:36] INFO             Epsilon: 0.28                           main.py:168
+           INFO             Reward: -9335.0                         main.py:169
+           INFO             Cumulative wait: 21707                  main.py:170
+           INFO             Avg queue: 4.0                          main.py:171
+           INFO     Episode 74 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_193289326#1_341' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1212.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_507' to match departure speed 10.00 (max 7.68).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_785' to match departure speed 10.00 (max 8.32).
+[22:17:46] INFO             Epsilon: 0.27                           main.py:168
+           INFO             Reward: -8773.0                         main.py:169
+           INFO             Cumulative wait: 22657                  main.py:170
+           INFO             Avg queue: 4.2                          main.py:171
+           INFO     Episode 75 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_835' to match departure speed 10.00 (max 8.46).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_888' to match departure speed 10.00 (max 8.54).
+[22:17:56] INFO             Epsilon: 0.26                           main.py:168
+           INFO             Reward: -6355.0                         main.py:169
+           INFO             Cumulative wait: 17193                  main.py:170
+           INFO             Avg queue: 3.2                          main.py:171
+           INFO     Episode 76 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_215507255#0_872' to match departure speed 10.00 (max 9.53).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_215507255#0_995' to match departure speed 10.00 (max 8.53).
+[22:18:06] INFO             Epsilon: 0.25                           main.py:168
+           INFO             Reward: -7620.0                         main.py:169
+           INFO             Cumulative wait: 20414                  main.py:170
+           INFO             Avg queue: 3.8                          main.py:171
+           INFO     Episode 77 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_215507255#0_7' to match departure speed 10.00 (max 9.85).
+[22:18:16] INFO             Epsilon: 0.24                           main.py:168
+           INFO             Reward: -7103.0                         main.py:169
+           INFO             Cumulative wait: 23513                  main.py:170
+           INFO             Avg queue: 4.4                          main.py:171
+           INFO     Episode 78 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Vehicle '648697035#0_to_193289326#1_502' performs emergency braking on lane '648697035#0_0' with decel=9.00, wished=4.50, severity=1.00, time=1687.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_846' to match departure speed 10.00 (max 8.42).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_868' to match departure speed 10.00 (max 9.78).
+[22:18:26] INFO             Epsilon: 0.23                           main.py:168
+           INFO             Reward: -6639.0                         main.py:169
+           INFO             Cumulative wait: 16825                  main.py:170
+           INFO             Avg queue: 3.1                          main.py:171
+           INFO     Episode 79 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_220' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1048.00.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_849' to match departure speed 10.00 (max 9.61).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_971' to match departure speed 10.00 (max 9.45).
+[22:18:36] INFO             Epsilon: 0.22                           main.py:168
+           INFO             Reward: -6466.0                         main.py:169
+           INFO             Cumulative wait: 19483                  main.py:170
+           INFO             Avg queue: 3.6                          main.py:171
+           INFO     Episode 80 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.32 for vehicle '193289327#0_to_194607856#0_827' to match departure speed 10.00 (max 9.73).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_847' to match departure speed 10.00 (max 9.98).
+Warning: Vehicle '648697035#0_to_194607856#0_884' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2416.00.
+[22:18:46] INFO             Epsilon: 0.21                           main.py:168
+           INFO             Reward: -10940.0                        main.py:169
+           INFO             Cumulative wait: 30423                  main.py:170
+           INFO             Avg queue: 5.6                          main.py:171
+           INFO     Episode 81 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+[22:18:56] INFO             Epsilon: 0.2                            main.py:168
+           INFO             Reward: -5662.0                         main.py:169
+           INFO             Cumulative wait: 17589                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 82 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_522' to match departure speed 10.00 (max 9.62).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_778' to match departure speed 10.00 (max 8.47).
+Warning: Choosing new speed factor 1.32 for vehicle '193289327#0_to_194607856#0_849' to match departure speed 10.00 (max 9.61).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_867' to match departure speed 10.00 (max 8.37).
+[22:19:05] INFO             Epsilon: 0.19                           main.py:168
+           INFO             Reward: -6706.0                         main.py:169
+           INFO             Cumulative wait: 16937                  main.py:170
+           INFO             Avg queue: 3.1                          main.py:171
+           INFO     Episode 83 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_868' to match departure speed 10.00 (max 9.78).
+[22:19:15] INFO             Epsilon: 0.18                           main.py:168
+           INFO             Reward: -5665.0                         main.py:169
+           INFO             Cumulative wait: 15403                  main.py:170
+           INFO             Avg queue: 2.9                          main.py:171
+           INFO     Episode 84 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_782' to match departure speed 10.00 (max 8.58).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_847' to match departure speed 10.00 (max 9.98).
+[22:19:26] INFO             Epsilon: 0.17                           main.py:168
+           INFO             Reward: -5945.0                         main.py:169
+           INFO             Cumulative wait: 19751                  main.py:170
+           INFO             Avg queue: 3.7                          main.py:171
+           INFO     Episode 85 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_535' to match departure speed 10.00 (max 9.55).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_803' to match departure speed 10.00 (max 9.66).
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_859' to match departure speed 10.00 (max 8.73).
+[22:19:35] INFO             Epsilon: 0.16                           main.py:168
+           INFO             Reward: -5849.0                         main.py:169
+           INFO             Cumulative wait: 17663                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 86 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.23 for vehicle '193289327#0_to_194607856#0_847' to match departure speed 10.00 (max 9.98).
+[22:19:46] INFO             Epsilon: 0.15                           main.py:168
+           INFO             Reward: -5931.0                         main.py:169
+           INFO             Cumulative wait: 15844                  main.py:170
+           INFO             Avg queue: 2.9                          main.py:171
+           INFO     Episode 87 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_9' to match departure speed 10.00 (max 9.53).
+[22:19:56] INFO             Epsilon: 0.14                           main.py:168
+           INFO             Reward: -6292.0                         main.py:169
+           INFO             Cumulative wait: 17239                  main.py:170
+           INFO             Avg queue: 3.2                          main.py:171
+           INFO     Episode 88 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_215507255#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_214' to match departure speed 10.00 (max 9.26).
+Warning: Vehicle '1126627065#0_to_194607856#0_443' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1577.00.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_537' to match departure speed 10.00 (max 9.44).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_569' to match departure speed 10.00 (max 9.61).
+[22:20:06] INFO             Epsilon: 0.13                           main.py:168
+           INFO             Reward: -6335.0                         main.py:169
+           INFO             Cumulative wait: 17851                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 89 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_550' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1648.00.
+Warning: Vehicle '1126627065#0_to_194607856#0_552' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1651.00.
+Warning: Choosing new speed factor 1.32 for vehicle '193289327#0_to_194607856#0_828' to match departure speed 10.00 (max 8.98).
+[22:20:16] INFO             Epsilon: 0.12                           main.py:168
+           INFO             Reward: -6290.0                         main.py:169
+           INFO             Cumulative wait: 20807                  main.py:170
+           INFO             Avg queue: 3.9                          main.py:171
+           INFO     Episode 90 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_222' to match departure speed 10.00 (max 9.29).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_215507255#0_535' to match departure speed 10.00 (max 9.55).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_897' to match departure speed 10.00 (max 9.74).
+[22:20:26] INFO             Epsilon: 0.11                           main.py:168
+           INFO             Reward: -6732.0                         main.py:169
+           INFO             Cumulative wait: 21657                  main.py:170
+           INFO             Avg queue: 4.0                          main.py:171
+           INFO     Episode 91 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_214' to match departure speed 10.00 (max 9.26).
+[22:20:36] INFO             Epsilon: 0.1                            main.py:168
+           INFO             Reward: -5260.0                         main.py:169
+           INFO             Cumulative wait: 16869                  main.py:170
+           INFO             Avg queue: 3.1                          main.py:171
+           INFO     Episode 92 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.20 for vehicle '193289327#0_to_194607856#0_7' to match departure speed 10.00 (max 9.85).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_215507255#0_454' to match departure speed 10.00 (max 9.60).
+Warning: Vehicle '1126627065#0_to_193289326#1_469' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1561.00.
+Warning: Choosing new speed factor 1.30 for vehicle '193289327#0_to_194607856#0_507' to match departure speed 10.00 (max 7.68).
+Warning: Choosing new speed factor 1.22 for vehicle '193289327#0_to_194607856#0_774' to match departure speed 10.00 (max 9.49).
+[22:20:46] INFO             Epsilon: 0.09                           main.py:168
+           INFO             Reward: -6105.0                         main.py:169
+           INFO             Cumulative wait: 17566                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 93 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.25 for vehicle '193289327#0_to_194607856#0_351' to match departure speed 10.00 (max 9.07).
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_827' to match departure speed 10.00 (max 9.73).
+Warning: Choosing new speed factor 1.37 for vehicle '193289327#0_to_194607856#0_849' to match departure speed 10.00 (max 9.61).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_194607856#0_915' to match departure speed 10.00 (max 9.16).
+[22:20:56] INFO             Epsilon: 0.08                           main.py:168
+           INFO             Reward: -7471.0                         main.py:169
+           INFO             Cumulative wait: 19590                  main.py:170
+           INFO             Avg queue: 3.6                          main.py:171
+           INFO     Episode 94 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_483' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=1688.00.
+[22:21:06] INFO             Epsilon: 0.07                           main.py:168
+           INFO             Reward: -4979.0                         main.py:169
+           INFO             Cumulative wait: 14680                  main.py:170
+           INFO             Avg queue: 2.7                          main.py:171
+           INFO     Episode 95 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.27 for vehicle '193289327#0_to_194607856#0_201' to match departure speed 10.00 (max 9.73).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_215507255#0_909' to match departure speed 10.00 (max 9.96).
+Warning: Choosing new speed factor 1.24 for vehicle '193289327#0_to_215507255#0_940' to match departure speed 10.00 (max 9.87).
+[22:21:16] INFO             Epsilon: 0.06                           main.py:168
+           INFO             Reward: -5660.0                         main.py:169
+           INFO             Cumulative wait: 14885                  main.py:170
+           INFO             Avg queue: 2.8                          main.py:171
+           INFO     Episode 96 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Choosing new speed factor 1.26 for vehicle '193289327#0_to_194607856#0_803' to match departure speed 10.00 (max 9.66).
+[22:21:27] INFO             Epsilon: 0.05                           main.py:168
+           INFO             Reward: -6520.0                         main.py:169
+           INFO             Cumulative wait: 21890                  main.py:170
+           INFO             Avg queue: 4.1                          main.py:171
+           INFO     Episode 97 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_194607856#0_192' performs emergency braking on lane ':cluster_14141137404_14141137405_14141137406_31228768_#3more_6_0' with decel=9.00, wished=4.50, severity=1.00, time=793.00.
+Warning: Vehicle '648697035#0_to_194607856#0_955' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=3207.00.
+[22:21:37] INFO             Epsilon: 0.04                           main.py:168
+           INFO             Reward: -5608.0                         main.py:169
+           INFO             Cumulative wait: 17663                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 98 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_108' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=576.00.
+Warning: Choosing new speed factor 1.30 for vehicle '193289327#0_to_194607856#0_535' to match departure speed 10.00 (max 9.55).
+[22:21:47] INFO             Epsilon: 0.03                           main.py:168
+           INFO             Reward: -5984.0                         main.py:169
+           INFO             Cumulative wait: 20785                  main.py:170
+           INFO             Avg queue: 3.8                          main.py:171
+           INFO     Episode 99 of 100                               main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '1126627065#0_to_193289326#1_742' performs emergency braking on lane '1126627065#0_1' with decel=9.00, wished=4.50, severity=1.00, time=2361.00.
+[22:21:58] INFO             Epsilon: 0.02                           main.py:168
+           INFO             Reward: -5669.0                         main.py:169
+           INFO             Cumulative wait: 17689                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 100 of 100                              main.py:141
+Warning: Unsafe green phase 4 in tlLogic 'cluster_14141137404_14141137405_14141137406_31228768_#3more', program 'per_approach'. Lane '193289326#1_1' is targeted by 2 'G'-links. (use 'g' instead) Overall 3 lanes in 1 phases are unsafe.
+Warning: Vehicle '648697035#0_to_194607856#0_97' performs emergency braking on lane '648697035#0_1' with decel=9.00, wished=4.50, severity=1.00, time=558.00.
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_568' to match departure speed 10.00 (max 9.52).
+Warning: Choosing new speed factor 1.21 for vehicle '193289327#0_to_194607856#0_948' to match departure speed 10.00 (max 8.83).
+[22:22:08] INFO             Epsilon: 0.01                           main.py:168
+           INFO             Reward: -9532.0                         main.py:169
+           INFO             Cumulative wait: 28161                  main.py:170
+           INFO             Avg queue: 5.2                          main.py:171
+           INFO     Start time: 2026-11-16 22:05:34.750137          main.py:176
+           INFO     End time: 2026-11-16 22:22:08.842968            main.py:177
+           INFO     Session info saved at: model\koteshwor          main.py:178

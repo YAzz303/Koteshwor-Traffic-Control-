@@ -1,0 +1,20 @@
+# simulation
+gui: true
+max_steps: 5400
+n_cars_generated: 1000
+green_duration: 10
+yellow_duration: 4
+turn_chance: 0.25
+episode_seed: 10000
+
+# agent
+gamma: 0.75
+
+# network
+network: koteshwor  # folder under intersection/ (imported from OSM)
+tls_id: null        # null = the only traffic light in the network
+signal_program: phases_per_approach.add.xml  # one green per approach (3 phases)
+
+# baselines (optional; used only by `tlcs baseline`)
+# fixed_green_durations: [30, 20, 30]      # green (s) per green phase in program order; default: green_duration each
+# actuated_max_green: 60                   # max green (s) for SUMO actuated; min green = green_duration

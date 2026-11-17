@@ -1,0 +1,516 @@
+[20:55:42] INFO     Network 't_junction': traffic light 'C', 6      main.py:122
+                    incoming lanes, state size 30, 2 actions                   
+           INFO     Creating new model for the Agent                model.py:90
+[20:55:43] INFO     Episode 1 of 100                                main.py:141
+[20:55:46] INFO             Epsilon: 1.0                            main.py:168
+           INFO             Reward: -11795.0                        main.py:169
+           INFO             Cumulative wait: 18433                  main.py:170
+           INFO             Avg queue: 3.4                          main.py:171
+           INFO     Episode 2 of 100                                main.py:141
+[20:55:56] INFO             Epsilon: 0.99                           main.py:168
+           INFO             Reward: -13250.0                        main.py:169
+           INFO             Cumulative wait: 24491                  main.py:170
+           INFO             Avg queue: 4.5                          main.py:171
+           INFO     Episode 3 of 100                                main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'W2C_to_C2E_255' to match departure speed 10.00 (max 9.86).
+[20:56:07] INFO             Epsilon: 0.98                           main.py:168
+           INFO             Reward: -18604.0                        main.py:169
+           INFO             Cumulative wait: 30004                  main.py:170
+           INFO             Avg queue: 5.6                          main.py:171
+           INFO     Episode 4 of 100                                main.py:141
+[20:56:18] INFO             Epsilon: 0.97                           main.py:168
+           INFO             Reward: -8598.0                         main.py:169
+           INFO             Cumulative wait: 12869                  main.py:170
+           INFO             Avg queue: 2.4                          main.py:171
+           INFO     Episode 5 of 100                                main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'W2C_to_C2E_255' to match departure speed 10.00 (max 9.86).
+[20:56:28] INFO             Epsilon: 0.96                           main.py:168
+           INFO             Reward: -12528.0                        main.py:169
+           INFO             Cumulative wait: 20563                  main.py:170
+           INFO             Avg queue: 3.8                          main.py:171
+           INFO     Episode 6 of 100                                main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'S2C_to_C2W_255' to match departure speed 10.00 (max 9.86).
+[20:56:40] INFO             Epsilon: 0.95                           main.py:168
+           INFO             Reward: -9434.0                         main.py:169
+           INFO             Cumulative wait: 15452                  main.py:170
+           INFO             Avg queue: 2.9                          main.py:171
+           INFO     Episode 7 of 100                                main.py:141
+[20:56:50] INFO             Epsilon: 0.94                           main.py:168
+           INFO             Reward: -9056.0                         main.py:169
+           INFO             Cumulative wait: 15541                  main.py:170
+           INFO             Avg queue: 2.9                          main.py:171
+           INFO     Episode 8 of 100                                main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'W2C_to_C2E_255' to match departure speed 10.00 (max 9.86).
+[20:57:01] INFO             Epsilon: 0.93                           main.py:168
+           INFO             Reward: -10587.0                        main.py:169
+           INFO             Cumulative wait: 17204                  main.py:170
+           INFO             Avg queue: 3.2                          main.py:171
+           INFO     Episode 9 of 100                                main.py:141
+[20:57:11] INFO             Epsilon: 0.92                           main.py:168
+           INFO             Reward: -6451.0                         main.py:169
+           INFO             Cumulative wait: 10478                  main.py:170
+           INFO             Avg queue: 1.9                          main.py:171
+           INFO     Episode 10 of 100                               main.py:141
+[20:57:22] INFO             Epsilon: 0.91                           main.py:168
+           INFO             Reward: -10814.0                        main.py:169
+           INFO             Cumulative wait: 16931                  main.py:170
+           INFO             Avg queue: 3.1                          main.py:171
+           INFO     Episode 11 of 100                               main.py:141
+[20:57:33] INFO             Epsilon: 0.9                            main.py:168
+           INFO             Reward: -13976.0                        main.py:169
+           INFO             Cumulative wait: 24202                  main.py:170
+           INFO             Avg queue: 4.5                          main.py:171
+           INFO     Episode 12 of 100                               main.py:141
+[20:57:43] INFO             Epsilon: 0.89                           main.py:168
+           INFO             Reward: -5933.0                         main.py:169
+           INFO             Cumulative wait: 10156                  main.py:170
+           INFO             Avg queue: 1.9                          main.py:171
+           INFO     Episode 13 of 100                               main.py:141
+[20:57:54] INFO             Epsilon: 0.88                           main.py:168
+           INFO             Reward: -10467.0                        main.py:169
+           INFO             Cumulative wait: 18833                  main.py:170
+           INFO             Avg queue: 3.5                          main.py:171
+           INFO     Episode 14 of 100                               main.py:141
+[20:58:05] INFO             Epsilon: 0.87                           main.py:168
+           INFO             Reward: -8506.0                         main.py:169
+           INFO             Cumulative wait: 14150                  main.py:170
+           INFO             Avg queue: 2.6                          main.py:171
+           INFO     Episode 15 of 100                               main.py:141
+[20:58:15] INFO             Epsilon: 0.86                           main.py:168
+           INFO             Reward: -5669.0                         main.py:169
+           INFO             Cumulative wait: 9316                   main.py:170
+           INFO             Avg queue: 1.7                          main.py:171
+           INFO     Episode 16 of 100                               main.py:141
+[20:58:25] INFO             Epsilon: 0.85                           main.py:168
+           INFO             Reward: -4734.0                         main.py:169
+           INFO             Cumulative wait: 8200                   main.py:170
+           INFO             Avg queue: 1.5                          main.py:171
+           INFO     Episode 17 of 100                               main.py:141
+[20:58:36] INFO             Epsilon: 0.84                           main.py:168
+           INFO             Reward: -7720.0                         main.py:169
+           INFO             Cumulative wait: 12989                  main.py:170
+           INFO             Avg queue: 2.4                          main.py:171
+           INFO     Episode 18 of 100                               main.py:141
+[20:58:46] INFO             Epsilon: 0.83                           main.py:168
+           INFO             Reward: -5833.0                         main.py:169
+           INFO             Cumulative wait: 9849                   main.py:170
+           INFO             Avg queue: 1.8                          main.py:171
+           INFO     Episode 19 of 100                               main.py:141
+[20:58:57] INFO             Epsilon: 0.82                           main.py:168
+           INFO             Reward: -5840.0                         main.py:169
+           INFO             Cumulative wait: 9695                   main.py:170
+           INFO             Avg queue: 1.8                          main.py:171
+           INFO     Episode 20 of 100                               main.py:141
+[20:59:08] INFO             Epsilon: 0.81                           main.py:168
+           INFO             Reward: -6827.0                         main.py:169
+           INFO             Cumulative wait: 11194                  main.py:170
+           INFO             Avg queue: 2.1                          main.py:171
+           INFO     Episode 21 of 100                               main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'E2C_to_C2W_255' to match departure speed 10.00 (max 9.86).
+[20:59:18] INFO             Epsilon: 0.8                            main.py:168
+           INFO             Reward: -3807.0                         main.py:169
+           INFO             Cumulative wait: 6733                   main.py:170
+           INFO             Avg queue: 1.2                          main.py:171
+           INFO     Episode 22 of 100                               main.py:141
+[20:59:28] INFO             Epsilon: 0.79                           main.py:168
+           INFO             Reward: -5259.0                         main.py:169
+           INFO             Cumulative wait: 9000                   main.py:170
+           INFO             Avg queue: 1.7                          main.py:171
+           INFO     Episode 23 of 100                               main.py:141
+[20:59:39] INFO             Epsilon: 0.78                           main.py:168
+           INFO             Reward: -10476.0                        main.py:169
+           INFO             Cumulative wait: 17945                  main.py:170
+           INFO             Avg queue: 3.3                          main.py:171
+           INFO     Episode 24 of 100                               main.py:141
+[20:59:49] INFO             Epsilon: 0.77                           main.py:168
+           INFO             Reward: -4419.0                         main.py:169
+           INFO             Cumulative wait: 7770                   main.py:170
+           INFO             Avg queue: 1.4                          main.py:171
+           INFO     Episode 25 of 100                               main.py:141
+[21:00:00] INFO             Epsilon: 0.76                           main.py:168
+           INFO             Reward: -6960.0                         main.py:169
+           INFO             Cumulative wait: 10922                  main.py:170
+           INFO             Avg queue: 2.0                          main.py:171
+           INFO     Episode 26 of 100                               main.py:141
+[21:00:10] INFO             Epsilon: 0.75                           main.py:168
+           INFO             Reward: -4423.0                         main.py:169
+           INFO             Cumulative wait: 8027                   main.py:170
+           INFO             Avg queue: 1.5                          main.py:171
+           INFO     Episode 27 of 100                               main.py:141
+[21:00:20] INFO             Epsilon: 0.74                           main.py:168
+           INFO             Reward: -5489.0                         main.py:169
+           INFO             Cumulative wait: 9094                   main.py:170
+           INFO             Avg queue: 1.7                          main.py:171
+           INFO     Episode 28 of 100                               main.py:141
+[21:00:30] INFO             Epsilon: 0.73                           main.py:168
+           INFO             Reward: -4682.0                         main.py:169
+           INFO             Cumulative wait: 8192                   main.py:170
+           INFO             Avg queue: 1.5                          main.py:171
+           INFO     Episode 29 of 100                               main.py:141
+[21:00:41] INFO             Epsilon: 0.72                           main.py:168
+           INFO             Reward: -5639.0                         main.py:169
+           INFO             Cumulative wait: 10232                  main.py:170
+           INFO             Avg queue: 1.9                          main.py:171
+           INFO     Episode 30 of 100                               main.py:141
+[21:00:52] INFO             Epsilon: 0.71                           main.py:168
+           INFO             Reward: -5371.0                         main.py:169
+           INFO             Cumulative wait: 9971                   main.py:170
+           INFO             Avg queue: 1.8                          main.py:171
+           INFO     Episode 31 of 100                               main.py:141
+[21:01:02] INFO             Epsilon: 0.7                            main.py:168
+           INFO             Reward: -5902.0                         main.py:169
+           INFO             Cumulative wait: 11316                  main.py:170
+           INFO             Avg queue: 2.1                          main.py:171
+           INFO     Episode 32 of 100                               main.py:141
+[21:01:13] INFO             Epsilon: 0.69                           main.py:168
+           INFO             Reward: -5766.0                         main.py:169
+           INFO             Cumulative wait: 9447                   main.py:170
+           INFO             Avg queue: 1.7                          main.py:171
+           INFO     Episode 33 of 100                               main.py:141
+[21:01:23] INFO             Epsilon: 0.68                           main.py:168
+           INFO             Reward: -4164.0                         main.py:169
+           INFO             Cumulative wait: 7248                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 34 of 100                               main.py:141
+[21:01:33] INFO             Epsilon: 0.67                           main.py:168
+           INFO             Reward: -4308.0                         main.py:169
+           INFO             Cumulative wait: 7651                   main.py:170
+           INFO             Avg queue: 1.4                          main.py:171
+           INFO     Episode 35 of 100                               main.py:141
+[21:01:44] INFO             Epsilon: 0.66                           main.py:168
+           INFO             Reward: -6297.0                         main.py:169
+           INFO             Cumulative wait: 11700                  main.py:170
+           INFO             Avg queue: 2.2                          main.py:171
+           INFO     Episode 36 of 100                               main.py:141
+[21:01:54] INFO             Epsilon: 0.65                           main.py:168
+           INFO             Reward: -4409.0                         main.py:169
+           INFO             Cumulative wait: 8426                   main.py:170
+           INFO             Avg queue: 1.6                          main.py:171
+           INFO     Episode 37 of 100                               main.py:141
+[21:02:04] INFO             Epsilon: 0.64                           main.py:168
+           INFO             Reward: -6878.0                         main.py:169
+           INFO             Cumulative wait: 12259                  main.py:170
+           INFO             Avg queue: 2.3                          main.py:171
+           INFO     Episode 38 of 100                               main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'W2C_to_C2E_255' to match departure speed 10.00 (max 9.86).
+[21:02:14] INFO             Epsilon: 0.63                           main.py:168
+           INFO             Reward: -3803.0                         main.py:169
+           INFO             Cumulative wait: 6994                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 39 of 100                               main.py:141
+[21:02:25] INFO             Epsilon: 0.62                           main.py:168
+           INFO             Reward: -4033.0                         main.py:169
+           INFO             Cumulative wait: 7277                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 40 of 100                               main.py:141
+[21:02:35] INFO             Epsilon: 0.61                           main.py:168
+           INFO             Reward: -6298.0                         main.py:169
+           INFO             Cumulative wait: 12583                  main.py:170
+           INFO             Avg queue: 2.3                          main.py:171
+           INFO     Episode 41 of 100                               main.py:141
+[21:02:46] INFO             Epsilon: 0.6                            main.py:168
+           INFO             Reward: -3924.0                         main.py:169
+           INFO             Cumulative wait: 7965                   main.py:170
+           INFO             Avg queue: 1.5                          main.py:171
+           INFO     Episode 42 of 100                               main.py:141
+[21:02:56] INFO             Epsilon: 0.59                           main.py:168
+           INFO             Reward: -3506.0                         main.py:169
+           INFO             Cumulative wait: 6802                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 43 of 100                               main.py:141
+[21:03:07] INFO             Epsilon: 0.58                           main.py:168
+           INFO             Reward: -3189.0                         main.py:169
+           INFO             Cumulative wait: 6618                   main.py:170
+           INFO             Avg queue: 1.2                          main.py:171
+           INFO     Episode 44 of 100                               main.py:141
+[21:03:17] INFO             Epsilon: 0.57                           main.py:168
+           INFO             Reward: -4222.0                         main.py:169
+           INFO             Cumulative wait: 7230                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 45 of 100                               main.py:141
+[21:03:27] INFO             Epsilon: 0.56                           main.py:168
+           INFO             Reward: -4196.0                         main.py:169
+           INFO             Cumulative wait: 7985                   main.py:170
+           INFO             Avg queue: 1.5                          main.py:171
+           INFO     Episode 46 of 100                               main.py:141
+[21:03:37] INFO             Epsilon: 0.55                           main.py:168
+           INFO             Reward: -4369.0                         main.py:169
+           INFO             Cumulative wait: 8655                   main.py:170
+           INFO             Avg queue: 1.6                          main.py:171
+           INFO     Episode 47 of 100                               main.py:141
+[21:03:47] INFO             Epsilon: 0.54                           main.py:168
+           INFO             Reward: -3294.0                         main.py:169
+           INFO             Cumulative wait: 6196                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 48 of 100                               main.py:141
+[21:03:58] INFO             Epsilon: 0.53                           main.py:168
+           INFO             Reward: -2807.0                         main.py:169
+           INFO             Cumulative wait: 5296                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 49 of 100                               main.py:141
+[21:04:08] INFO             Epsilon: 0.52                           main.py:168
+           INFO             Reward: -3753.0                         main.py:169
+           INFO             Cumulative wait: 7048                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 50 of 100                               main.py:141
+[21:04:18] INFO             Epsilon: 0.51                           main.py:168
+           INFO             Reward: -4361.0                         main.py:169
+           INFO             Cumulative wait: 8103                   main.py:170
+           INFO             Avg queue: 1.5                          main.py:171
+           INFO     Episode 51 of 100                               main.py:141
+[21:04:28] INFO             Epsilon: 0.5                            main.py:168
+           INFO             Reward: -3411.0                         main.py:169
+           INFO             Cumulative wait: 7124                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 52 of 100                               main.py:141
+[21:04:39] INFO             Epsilon: 0.49                           main.py:168
+           INFO             Reward: -2995.0                         main.py:169
+           INFO             Cumulative wait: 5976                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 53 of 100                               main.py:141
+[21:04:49] INFO             Epsilon: 0.48                           main.py:168
+           INFO             Reward: -3524.0                         main.py:169
+           INFO             Cumulative wait: 6829                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 54 of 100                               main.py:141
+[21:05:00] INFO             Epsilon: 0.47                           main.py:168
+           INFO             Reward: -3224.0                         main.py:169
+           INFO             Cumulative wait: 6603                   main.py:170
+           INFO             Avg queue: 1.2                          main.py:171
+           INFO     Episode 55 of 100                               main.py:141
+[21:05:11] INFO             Epsilon: 0.46                           main.py:168
+           INFO             Reward: -2937.0                         main.py:169
+           INFO             Cumulative wait: 6048                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 56 of 100                               main.py:141
+[21:05:22] INFO             Epsilon: 0.45                           main.py:168
+           INFO             Reward: -2869.0                         main.py:169
+           INFO             Cumulative wait: 5615                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 57 of 100                               main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'E2C_to_C2W_255' to match departure speed 10.00 (max 9.86).
+[21:05:32] INFO             Epsilon: 0.44                           main.py:168
+           INFO             Reward: -3587.0                         main.py:169
+           INFO             Cumulative wait: 6876                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 58 of 100                               main.py:141
+[21:05:42] INFO             Epsilon: 0.43                           main.py:168
+           INFO             Reward: -3010.0                         main.py:169
+           INFO             Cumulative wait: 5977                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 59 of 100                               main.py:141
+[21:05:52] INFO             Epsilon: 0.42                           main.py:168
+           INFO             Reward: -5054.0                         main.py:169
+           INFO             Cumulative wait: 8986                   main.py:170
+           INFO             Avg queue: 1.7                          main.py:171
+           INFO     Episode 60 of 100                               main.py:141
+[21:06:02] INFO             Epsilon: 0.41                           main.py:168
+           INFO             Reward: -3545.0                         main.py:169
+           INFO             Cumulative wait: 7236                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 61 of 100                               main.py:141
+[21:06:12] INFO             Epsilon: 0.4                            main.py:168
+           INFO             Reward: -2901.0                         main.py:169
+           INFO             Cumulative wait: 5502                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 62 of 100                               main.py:141
+[21:06:23] INFO             Epsilon: 0.39                           main.py:168
+           INFO             Reward: -4258.0                         main.py:169
+           INFO             Cumulative wait: 7967                   main.py:170
+           INFO             Avg queue: 1.5                          main.py:171
+           INFO     Episode 63 of 100                               main.py:141
+[21:06:33] INFO             Epsilon: 0.38                           main.py:168
+           INFO             Reward: -2975.0                         main.py:169
+           INFO             Cumulative wait: 5747                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 64 of 100                               main.py:141
+[21:06:44] INFO             Epsilon: 0.37                           main.py:168
+           INFO             Reward: -3136.0                         main.py:169
+           INFO             Cumulative wait: 7056                   main.py:170
+           INFO             Avg queue: 1.3                          main.py:171
+           INFO     Episode 65 of 100                               main.py:141
+[21:06:54] INFO             Epsilon: 0.36                           main.py:168
+           INFO             Reward: -3020.0                         main.py:169
+           INFO             Cumulative wait: 6306                   main.py:170
+           INFO             Avg queue: 1.2                          main.py:171
+           INFO     Episode 66 of 100                               main.py:141
+[21:07:05] INFO             Epsilon: 0.35                           main.py:168
+           INFO             Reward: -2944.0                         main.py:169
+           INFO             Cumulative wait: 6023                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 67 of 100                               main.py:141
+[21:07:15] INFO             Epsilon: 0.34                           main.py:168
+           INFO             Reward: -2486.0                         main.py:169
+           INFO             Cumulative wait: 5120                   main.py:170
+           INFO             Avg queue: 0.9                          main.py:171
+           INFO     Episode 68 of 100                               main.py:141
+[21:07:26] INFO             Epsilon: 0.33                           main.py:168
+           INFO             Reward: -2783.0                         main.py:169
+           INFO             Cumulative wait: 6026                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 69 of 100                               main.py:141
+[21:07:36] INFO             Epsilon: 0.32                           main.py:168
+           INFO             Reward: -2852.0                         main.py:169
+           INFO             Cumulative wait: 5666                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 70 of 100                               main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'E2C_to_C2W_255' to match departure speed 10.00 (max 9.86).
+[21:07:46] INFO             Epsilon: 0.31                           main.py:168
+           INFO             Reward: -2868.0                         main.py:169
+           INFO             Cumulative wait: 5697                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 71 of 100                               main.py:141
+[21:07:56] INFO             Epsilon: 0.3                            main.py:168
+           INFO             Reward: -2612.0                         main.py:169
+           INFO             Cumulative wait: 6434                   main.py:170
+           INFO             Avg queue: 1.2                          main.py:171
+           INFO     Episode 72 of 100                               main.py:141
+[21:08:07] INFO             Epsilon: 0.29                           main.py:168
+           INFO             Reward: -2682.0                         main.py:169
+           INFO             Cumulative wait: 6124                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 73 of 100                               main.py:141
+[21:08:18] INFO             Epsilon: 0.28                           main.py:168
+           INFO             Reward: -2638.0                         main.py:169
+           INFO             Cumulative wait: 5312                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 74 of 100                               main.py:141
+[21:08:28] INFO             Epsilon: 0.27                           main.py:168
+           INFO             Reward: -2665.0                         main.py:169
+           INFO             Cumulative wait: 5870                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 75 of 100                               main.py:141
+[21:08:39] INFO             Epsilon: 0.26                           main.py:168
+           INFO             Reward: -3160.0                         main.py:169
+           INFO             Cumulative wait: 6106                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 76 of 100                               main.py:141
+[21:08:49] INFO             Epsilon: 0.25                           main.py:168
+           INFO             Reward: -2496.0                         main.py:169
+           INFO             Cumulative wait: 5015                   main.py:170
+           INFO             Avg queue: 0.9                          main.py:171
+           INFO     Episode 77 of 100                               main.py:141
+[21:08:59] INFO             Epsilon: 0.24                           main.py:168
+           INFO             Reward: -2212.0                         main.py:169
+           INFO             Cumulative wait: 5268                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 78 of 100                               main.py:141
+[21:09:10] INFO             Epsilon: 0.23                           main.py:168
+           INFO             Reward: -2324.0                         main.py:169
+           INFO             Cumulative wait: 5355                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 79 of 100                               main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'E2C_to_C2W_255' to match departure speed 10.00 (max 9.86).
+[21:09:20] INFO             Epsilon: 0.22                           main.py:168
+           INFO             Reward: -2857.0                         main.py:169
+           INFO             Cumulative wait: 6067                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 80 of 100                               main.py:141
+[21:09:31] INFO             Epsilon: 0.21                           main.py:168
+           INFO             Reward: -2687.0                         main.py:169
+           INFO             Cumulative wait: 6156                   main.py:170
+           INFO             Avg queue: 1.1                          main.py:171
+           INFO     Episode 81 of 100                               main.py:141
+[21:09:41] INFO             Epsilon: 0.2                            main.py:168
+           INFO             Reward: -2209.0                         main.py:169
+           INFO             Cumulative wait: 5487                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 82 of 100                               main.py:141
+[21:09:52] INFO             Epsilon: 0.19                           main.py:168
+           INFO             Reward: -1680.0                         main.py:169
+           INFO             Cumulative wait: 3836                   main.py:170
+           INFO             Avg queue: 0.7                          main.py:171
+           INFO     Episode 83 of 100                               main.py:141
+[21:10:02] INFO             Epsilon: 0.18                           main.py:168
+           INFO             Reward: -2406.0                         main.py:169
+           INFO             Cumulative wait: 5026                   main.py:170
+           INFO             Avg queue: 0.9                          main.py:171
+           INFO     Episode 84 of 100                               main.py:141
+[21:10:13] INFO             Epsilon: 0.17                           main.py:168
+           INFO             Reward: -2262.0                         main.py:169
+           INFO             Cumulative wait: 5294                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 85 of 100                               main.py:141
+[21:10:24] INFO             Epsilon: 0.16                           main.py:168
+           INFO             Reward: -2384.0                         main.py:169
+           INFO             Cumulative wait: 5095                   main.py:170
+           INFO             Avg queue: 0.9                          main.py:171
+           INFO     Episode 86 of 100                               main.py:141
+[21:10:34] INFO             Epsilon: 0.15                           main.py:168
+           INFO             Reward: -2476.0                         main.py:169
+           INFO             Cumulative wait: 5244                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 87 of 100                               main.py:141
+[21:10:45] INFO             Epsilon: 0.14                           main.py:168
+           INFO             Reward: -1946.0                         main.py:169
+           INFO             Cumulative wait: 4486                   main.py:170
+           INFO             Avg queue: 0.8                          main.py:171
+           INFO     Episode 88 of 100                               main.py:141
+[21:10:56] INFO             Epsilon: 0.13                           main.py:168
+           INFO             Reward: -1689.0                         main.py:169
+           INFO             Cumulative wait: 3824                   main.py:170
+           INFO             Avg queue: 0.7                          main.py:171
+           INFO     Episode 89 of 100                               main.py:141
+[21:11:06] INFO             Epsilon: 0.12                           main.py:168
+           INFO             Reward: -2262.0                         main.py:169
+           INFO             Cumulative wait: 5193                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 90 of 100                               main.py:141
+[21:11:17] INFO             Epsilon: 0.11                           main.py:168
+           INFO             Reward: -2191.0                         main.py:169
+           INFO             Cumulative wait: 4790                   main.py:170
+           INFO             Avg queue: 0.9                          main.py:171
+           INFO     Episode 91 of 100                               main.py:141
+[21:11:27] INFO             Epsilon: 0.1                            main.py:168
+           INFO             Reward: -1952.0                         main.py:169
+           INFO             Cumulative wait: 4316                   main.py:170
+           INFO             Avg queue: 0.8                          main.py:171
+           INFO     Episode 92 of 100                               main.py:141
+[21:11:38] INFO             Epsilon: 0.09                           main.py:168
+           INFO             Reward: -1666.0                         main.py:169
+           INFO             Cumulative wait: 4149                   main.py:170
+           INFO             Avg queue: 0.8                          main.py:171
+           INFO     Episode 93 of 100                               main.py:141
+[21:11:48] INFO             Epsilon: 0.08                           main.py:168
+           INFO             Reward: -2145.0                         main.py:169
+           INFO             Cumulative wait: 5337                   main.py:170
+           INFO             Avg queue: 1.0                          main.py:171
+           INFO     Episode 94 of 100                               main.py:141
+Warning: Choosing new speed factor 1.25 for vehicle 'E2C_to_C2S_255' to match departure speed 10.00 (max 9.86).
+[21:11:59] INFO             Epsilon: 0.07                           main.py:168
+           INFO             Reward: -1756.0                         main.py:169
+           INFO             Cumulative wait: 4470                   main.py:170
+           INFO             Avg queue: 0.8                          main.py:171
+           INFO     Episode 95 of 100                               main.py:141
+[21:12:10] INFO             Epsilon: 0.06                           main.py:168
+           INFO             Reward: -1646.0                         main.py:169
+           INFO             Cumulative wait: 3858                   main.py:170
+           INFO             Avg queue: 0.7                          main.py:171
+           INFO     Episode 96 of 100                               main.py:141
+[21:12:21] INFO             Epsilon: 0.05                           main.py:168
+           INFO             Reward: -2666.0                         main.py:169
+           INFO             Cumulative wait: 6739                   main.py:170
+           INFO             Avg queue: 1.2                          main.py:171
+           INFO     Episode 97 of 100                               main.py:141
+[21:12:31] INFO             Epsilon: 0.04                           main.py:168
+           INFO             Reward: -1864.0                         main.py:169
+           INFO             Cumulative wait: 4832                   main.py:170
+           INFO             Avg queue: 0.9                          main.py:171
+           INFO     Episode 98 of 100                               main.py:141
+[21:12:42] INFO             Epsilon: 0.03                           main.py:168
+           INFO             Reward: -2036.0                         main.py:169
+           INFO             Cumulative wait: 4792                   main.py:170
+           INFO             Avg queue: 0.9                          main.py:171
+           INFO     Episode 99 of 100                               main.py:141
+[21:12:53] INFO             Epsilon: 0.02                           main.py:168
+           INFO             Reward: -1441.0                         main.py:169
+           INFO             Cumulative wait: 3787                   main.py:170
+           INFO             Avg queue: 0.7                          main.py:171
+           INFO     Episode 100 of 100                              main.py:141
+[21:13:03] INFO             Epsilon: 0.01                           main.py:168
+           INFO             Reward: -1702.0                         main.py:169
+           INFO             Cumulative wait: 4511                   main.py:170
+           INFO             Avg queue: 0.8                          main.py:171
+           INFO     Start time: 2026-11-16 20:55:43.645241          main.py:176
+           INFO     End time: 2026-11-16 21:13:03.886400            main.py:177
+           INFO     Session info saved at: model\t_junction         main.py:178

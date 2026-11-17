@@ -1,0 +1,7 @@
+run,controller,avg_wait_per_vehicle_s,mean_queue_length,max_queue_length,cumulative_negative_reward,vehicles
+test,dqn,25.13,4.55,50.0,-7548.0,999
+fixed,fixed,111.23,16.93,65.0,-43061.0,999
+random,random,69.23,10.08,70.0,-30753.0,999
+lqf,lqf,57.26,6.98,38.0,-17022.0,999
+maxpressure,maxpressure,53.55,6.03,31.0,-19859.0,999
+actuated,actuated,18.04,3.23,24.0,-6708.0,999

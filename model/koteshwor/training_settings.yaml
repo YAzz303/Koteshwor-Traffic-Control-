@@ -1,0 +1,30 @@
+# simulation
+gui: false
+total_episodes: 100
+max_steps: 5400
+n_cars_generated: 1000
+green_duration: 10
+yellow_duration: 4
+turn_chance: 0.25
+
+# model
+num_layers: 4
+width_layers: 400
+batch_size: 100
+learning_rate: 0.001
+training_epochs: 800
+
+# memory
+memory_size_min: 600
+memory_size_max: 50000
+
+# agent
+gamma: 0.75
+
+# network
+network: koteshwor  # folder under intersection/ (imported from OSM)
+tls_id: null        # null = the only traffic light in the network
+signal_program: phases_per_approach.add.xml  # one green per approach (3 phases)
+
+# state
+cells_per_lane: 5   # state size = incoming lanes x cells_per_lane (koteshwor: 8 x 5 = 40)

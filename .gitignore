@@ -2,8 +2,4 @@
 *.pyc
 changes.txt
 debug/
-model/
 instructions.md
-baselines/
-comparison/
-live/

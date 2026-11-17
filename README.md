@@ -533,7 +533,7 @@ The lanes of each phase come from the discovered movements (links that are green
 - Prefer headless mode (`gui: false`) for training; enable the GUI only when debugging a run or for the testing phase.
 - If an output directory already exists, the CLI asks before overwriting it.
 - On Windows, if a command crashes with `UnicodeEncodeError` (for example when its output is redirected to a file), run `$env:PYTHONIOENCODING="utf-8"` in PowerShell first.
-- Output folders `model/`, `baselines/`, `comparison/` and `live/` are git-ignored, as are generated files in the network folders (`episode_routes.rou.xml`, `tls_actuated.add.xml`, `live_*.sumocfg`).
+- Output folders `model/`, `baselines/`, `comparison/` and `live/` are committed, so the trained models and every result in the docs are in the repo. Generated files in the network folders are git-ignored (`episode_routes.rou.xml`, `tls_actuated.add.xml`, `live_*.sumocfg`).
 - Don't run two commands on the **same network** at the same time: they share that network's generated routes file. Different networks are fine.
 
 ## License

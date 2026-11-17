@@ -268,7 +268,7 @@ docs/                koteshwor_results.md, final/ (figures, tables, limitations)
 tests/               pytest suite
 ```
 
-Generated outputs go to `model/`, `baselines/`, `comparison/` and `live/`. These folders are git-ignored.
+Generated outputs go to `model/` (trained models and checkpoints), `baselines/`, `comparison/` and `live/`. They are committed, so the results in the docs can be inspected without re-running anything.
 
 Tips:
 

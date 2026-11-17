@@ -1,0 +1,2 @@
+run,controller,demand,avg_wait_per_vehicle_s,mean_queue_length,max_queue_length,throughput,cumulative_negative_reward,vehicles
+dqn,dqn,1400,55.79,7.89,55.0,1399,-23089.0,1399

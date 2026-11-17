@@ -1,0 +1,7 @@
+run,controller,demand,avg_wait_per_vehicle_s,mean_queue_length,max_queue_length,throughput,cumulative_negative_reward,vehicles
+DQN 100 episodes,dqn,600,10.07,1.11,10.0,599,-2340.0,599
+DQN 1000 episodes,dqn,600,9.19,1.01,11.0,599,-2145.0,599
+DQN 100 episodes,dqn,1000,25.13,4.55,50.0,999,-7548.0,999
+DQN 1000 episodes,dqn,1000,21.28,3.75,26.0,999,-5348.0,999
+DQN 100 episodes,dqn,1400,67.66,12.12,65.0,1399,-24103.0,1399
+DQN 1000 episodes,dqn,1400,55.79,7.89,55.0,1399,-23089.0,1399
